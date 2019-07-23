@@ -18,16 +18,20 @@
           </div>
           <!-- Show links for all groups -->
 		  <script>
-		  $("#foundation-list > li").click(function() {
-			$(this).find("ul.section-nav").toggleClass('hide');
+		  $(".drop-nav").on("click", function(e) {
+			  e.preventDefault()
+			  // don't allow the event to fire horizontally or vertically up the tree
+			  e.stopImmediatePropagation()
+			  // switch the active class that you can use to display the child
+			  $(this).toggleClass('active')
 			});
 		  </script>
 		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
           <div class="ct-toc-item active">
             <a class="ct-toc-link" href="../foundation/colors.html">Foundation</a>
-            <ul class="nav ct-sidenav" id="foundation-list">
-              <li><a href="../foundation/colors.html">Colors</a>
-				<ul class="section-nav hide">
+            <ul class="nav ct-sidenav">
+              <li class="drop-nav"><a href="../foundation/colors.html">Colors</a>
+				<ul class="section-nav">
 				  <li class="toc-entry toc-h2"><a href="#cheer">Cheer</a></li>
 				  <li class="toc-entry toc-h2"><a href="#dfmc">DFMC</a></li>
 				  <li class="toc-entry toc-h2"><a href="#fantasy-day">Fantasy Day</a></li>

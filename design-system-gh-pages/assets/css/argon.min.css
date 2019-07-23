@@ -55,8 +55,12 @@
 }
 /*CUSTOM CODE*/
 /*SIDE NAV*/
-.hide {
+.drop-nav > ul {
   display: none;
+}
+
+.drop-nav.active > ul {
+  display: block;
 }
 
 html {
