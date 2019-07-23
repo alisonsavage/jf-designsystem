@@ -53,6 +53,12 @@
 *, ::after, ::before {
 	box-sizing: border-box
 }
+/*CUSTOM CODE*/
+/*SIDE NAV*/
+.hide {
+  display: none;
+}
+
 html {
 	font-family: sans-serif;
 	line-height: 1.15;

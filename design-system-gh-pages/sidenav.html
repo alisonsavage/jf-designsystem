@@ -17,26 +17,31 @@
             </ul>
           </div>
           <!-- Show links for all groups -->
+		  <script>
+		  $("#foundation > li").click(function() {
+			$(this).find("ul.section-nav").toggleClass('hide');
+			});
+		  </script>
           <div class="ct-toc-item active">
             <a class="ct-toc-link" href="../foundation/colors.html">Foundation</a>
-            <ul class="nav ct-sidenav">
+            <ul class="nav ct-sidenav" id="foundation">
               <li>
                 <a href="../foundation/colors.html">Colors</a></li>
-				<ul class="section-nav">
-			  <li class="toc-entry toc-h2"><a href="#cheer">Cheer</a></li>
-			  <li class="toc-entry toc-h2"><a href="#dfmc">DFMC</a></li>
-			  <li class="toc-entry toc-h2"><a href="#fantasy-day">Fantasy Day</a></li>
-			  <li class="toc-entry toc-h2"><a href="#gene-display">Gene Display</a></li>
-			  <li class="toc-entry toc-h2"><a href="#golf">Golf</a></li>
-			  <li class="toc-entry toc-h2"><a href="#kick">Kick</a></li>
-			  <li class="toc-entry toc-h2"><a href="#little-league">Little League</a></li>
-			  <li class="toc-entry toc-h2"><a href="#fund-pages">Fundraising Pages</a></li>
-			  <li class="toc-entry toc-h2"><a href="#radio-telethon">Radio-Telethon</a></li>
-			  <li class="toc-entry toc-h2"><a href="#rally">Rally</a></li>
-			  <li class="toc-entry toc-h2"><a href="#run">RDF</a></li>
-			  <li class="toc-entry toc-h2"><a href="#scooper-bowl">Scooper Bowl</a></li>
-			  <li class="toc-entry toc-h2"><a href="#walk">Walk</a></li>
-			</ul>
+				<ul class="section-nav hide">
+				  <li class="toc-entry toc-h2"><a href="#cheer">Cheer</a></li>
+				  <li class="toc-entry toc-h2"><a href="#dfmc">DFMC</a></li>
+				  <li class="toc-entry toc-h2"><a href="#fantasy-day">Fantasy Day</a></li>
+				  <li class="toc-entry toc-h2"><a href="#gene-display">Gene Display</a></li>
+				  <li class="toc-entry toc-h2"><a href="#golf">Golf</a></li>
+				  <li class="toc-entry toc-h2"><a href="#kick">Kick</a></li>
+				  <li class="toc-entry toc-h2"><a href="#little-league">Little League</a></li>
+				  <li class="toc-entry toc-h2"><a href="#fund-pages">Fundraising Pages</a></li>
+				  <li class="toc-entry toc-h2"><a href="#radio-telethon">Radio-Telethon</a></li>
+				  <li class="toc-entry toc-h2"><a href="#rally">Rally</a></li>
+				  <li class="toc-entry toc-h2"><a href="#run">RDF</a></li>
+				  <li class="toc-entry toc-h2"><a href="#scooper-bowl">Scooper Bowl</a></li>
+				  <li class="toc-entry toc-h2"><a href="#walk">Walk</a></li>
+				</ul>
             <!--  <li>
                 <a href="../foundation/grid.html">Grid</a></li>
               <li>
