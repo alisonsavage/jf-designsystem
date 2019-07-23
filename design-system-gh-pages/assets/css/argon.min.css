@@ -425,7 +425,8 @@ kbd kbd {
 pre {
 	font-size: 87.5%;
 	display: block;
-	color: #212529
+	color: #212529;
+	max-height:30em;
 }
 pre code {
 	font-size: inherit;
