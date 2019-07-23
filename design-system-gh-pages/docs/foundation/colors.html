@@ -48,7 +48,15 @@
         'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
       f.parentNode.insertBefore(j, f);
     })(window, document, 'script', 'dataLayer', 'GTM-NKDMSK6');
+  </script>	
+  <!--NAV Reusable-->
+  <script>
+	  $(function() {
+		  $("#navigation").load("../../sidenav.html");
+	  });
   </script>
+  <!--jQuery From CDN-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
   <!-- End Google Tag Manager -->
   <!-- Favicon -->
   <link href="../../assets/img/brand/favicon.png" rel="icon" type="image/png">
@@ -61,11 +69,6 @@
   <link type="text/css" href="../../assets/css/argon.min.css" rel="stylesheet">
   <!-- Docs CSS -->
   <link type="text/css" href="../../assets/css/docs.min.css" rel="stylesheet">
-	<!--Handlebars From CDN-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.js"></script>
-	<!--jQuery From CDN-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js">
-</script>
 </head>
 
 <body>
@@ -152,20 +155,6 @@
         </div>
         <p class="ct-lead">Get started with Bootstrap, the world’s most popular framework for building responsive, mobile-first sites, with BootstrapCDN and a template starter page.</p>
         <hr>
-		  
-		<!--This is our template. -->
-<!--Data will be inserted in its according place, replacing the brackets.-->
-<script>$(function() {
-    $("#navigation").load("../../sidenav.html");
-	});
-</script>
-
-<div class="content-placeholder"></div>
-<script src="../../../design-system-master/test.js"></script>
-		  
-
-<!--Your new content will be displayed in here-->
-<div class="content-placeholder"></div>
 		
         <h2 id="primary-colors">Primary colors</h2>
         <p>Our primary palette is comprised of neutrals, red, and blue. These colors are present across most touch points from marketing to product.</p>
