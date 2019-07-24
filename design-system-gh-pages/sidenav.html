@@ -19,13 +19,13 @@
           <!-- Show links for all groups -->
 		  <!--NESTED LIST-->
 		  <script>
-		  $(".drop-nav a").on("click", function(e) {
-			  e.preventDefault()
-			  // don't allow the event to fire horizontally or vertically up the tree
-			  e.stopImmediatePropagation()
-			  // switch the active class that you can use to display the child
-			  $(this).toggleClass('active')
-			});
+		  $(".drop-nav").on("click", function(e) {
+  e.preventDefault()
+  // don't allow the event to fire horizontally or vertically up the tree
+  e.stopImmediatePropagation()
+  // switch the active class that you can use to display the child
+  $(this).toggleClass('active')
+})
 		  </script>
 		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
           <div class="ct-toc-item active">
