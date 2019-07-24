@@ -55,8 +55,13 @@
 }
 /*CUSTOM CODE*/
 /*SIDE NAV*/
-li ul{display:none;}
-li:active ul{display:block;}
+.drop-nav > ul {
+  display: none;
+}
+
+.drop-nav.active > ul {
+  display: block;
+}
 
 html {
 	font-family: sans-serif;
