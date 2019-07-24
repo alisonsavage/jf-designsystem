@@ -19,11 +19,9 @@
           <!-- Show links for all groups -->
 		  <!--NESTED LIST OF PROGRAM COLORS-->
 		  <script>
-		  $(".drop-nav").on("click", function(e) {
-			  e.preventDefault()
-			  // switch the active class that you can use to display the child
-			  $(this).toggleClass('active')
-			});
+		  $(".drop-nav").click(function() {
+    $(this).find("li").find("ul").show();
+});
 		  </script>
 		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
           <div class="ct-toc-item active">
