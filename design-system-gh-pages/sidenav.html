@@ -19,17 +19,15 @@
           <!-- Show links for all groups -->
 		  <!--NESTED LIST OF PROGRAM COLORS-->
 		  <script>
-		  $('li.expandable').click(function() {
-    $(this).children('ul').toggle();
-    return false;
+		  $('li').click(function() {
+    $(this).next('ul').toggle();
 });
-})
 		  </script>
 		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
           <div class="ct-toc-item active">
             <a class="ct-toc-link" href="../foundation/colors.html">Foundation</a>
             <ul class="nav ct-sidenav">
-              <li class="expandable"><a href="../foundation/colors.html">Colors</a>
+              <li><a href="../foundation/colors.html">Colors</a></li>
 				<ul class="section-nav">
 				  <li class="toc-entry toc-h2"><a href="#cheer">Cheer</a></li>
 				  <li class="toc-entry toc-h2"><a href="#dfmc">DFMC</a></li>
@@ -45,7 +43,7 @@
 				  <li class="toc-entry toc-h2"><a href="#scooper-bowl">Scooper Bowl</a></li>
 				  <li class="toc-entry toc-h2"><a href="#walk">Walk</a></li>
 				</ul>
-			</li>
+			
             <!--  <li>
                 <a href="../foundation/grid.html">Grid</a></li>
               <li>
