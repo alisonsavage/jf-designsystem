@@ -19,15 +19,17 @@
           <!-- Show links for all groups -->
 		  <!--NESTED LIST OF PROGRAM COLORS-->
 		  <script>
-		  $(".drop-nav").click(function() {
-    $(this).find("li").find("ul").show();
-});
+		  $(document).ready(function(){
+    $("li").has("ul li").click(function(){
+        $(this).toggle()
+    })
+})
 		  </script>
 		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
           <div class="ct-toc-item active">
             <a class="ct-toc-link" href="../foundation/colors.html">Foundation</a>
             <ul class="nav ct-sidenav">
-              <li class="drop-nav"><a href="../foundation/colors.html">Colors</a>
+              <li><a href="../foundation/colors.html">Colors</a>
 				<ul class="section-nav">
 				  <li class="toc-entry toc-h2"><a href="#cheer">Cheer</a></li>
 				  <li class="toc-entry toc-h2"><a href="#dfmc">DFMC</a></li>
