@@ -21,8 +21,6 @@
 		  <script>
 		  $(".drop-nav").on("click", function(e) {
 			  e.preventDefault()
-			  // don't allow the event to fire horizontally or vertically up the tree
-			  e.stopImmediatePropagation()
 			  // switch the active class that you can use to display the child
 			  $(this).toggleClass('active')
 			});
