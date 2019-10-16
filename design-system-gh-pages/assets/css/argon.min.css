@@ -5364,7 +5364,7 @@ a.bg-dark:focus, a.bg-dark:hover, button.bg-dark:focus, button.bg-dark:hover {
 
 
 
-/*------------------DF COLORS------------------*/
+/*------------------OLD DF COLORS------------------
 
 .df-red {
 	background-color: #9d2235!important
@@ -5374,19 +5374,71 @@ a.df-red:focus, a.df-red:hover, button.df-red:focus, button.df-red:hover {
 }
 .df-red-light {
 	background-color: #b95459!important
-}
+}*/
 
-/*------------------JF COLORS------------------*/
+/*------------------OLD JF COLORS------------------
 
 .jf-blue {
-	background-color: #00629B!important
+	background-color: #0060a9!important
 }
 a.bg-default:focus, a.jf-blue:hover, button.jf-blue:focus, button.jf-blue:hover {
 	background-color: #3380ba!important
 }
 .jf-blue-light {
 	background-color: #3380ba!important
+}*/
+
+/*------------------New DF/JF COLORS------------------*/
+
+.df-blue {
+	background-color: #00629B!important
 }
+a.bg-default:focus, a.df-blue:hover, button.df-blue:focus, button.df-blue:hover {
+	background-color: #00609C!important
+}
+.df-blue-accent {
+	background-color: #00609C!important
+}
+
+.df-sky {
+	background-color: #41B6E6!important
+}
+a.bg-default:focus, a.df-sky:hover, button.df-sky:focus, button.df-sky:hover {
+	background-color: #40B4E2!important
+}
+.df-sky-accent {
+	background-color: #40B4E2!important
+}
+
+.df-amber {
+	background-color: #FFA300!important
+}
+a.bg-default:focus, a.df-amber:hover, button.df-amber:focus, button.df-amber:hover {
+	background-color: #FAA21B!important
+}
+.df-amber-accent {
+	background-color: #FAA21B!important
+}
+
+.df-gray {
+	background-color: #63666A!important
+}
+a.bg-default:focus, a.df-gray:hover, button.df-gray:focus, button.df-gray:hover {
+	background-color: #6E6F71!important
+}
+.df-gray-accent {
+	background-color: #6E6F71!important
+}
+
+.df-midnight {
+	background-color: #003354!important
+}
+
+.df-dark-gray {
+	background-color: #4D4D4F!important
+}
+
+
 
 /*------------------NEUTRALS------------------*/
 
@@ -5490,7 +5542,7 @@ a.gene-blue:focus, a.gene-blue:hover, button.gene-blue:focus, button.gene-blue:h
 /*------------------GOLF------------------*/
 
 .golf-green {
-	background-color: #64a84a!important
+	background-color: #428623!important
 }
 a.golf-green:focus, a.golf-green:hover, button.golf-green:focus, button.golf-green:hover {
 	background-color: #83b96e!important
@@ -5580,7 +5632,7 @@ a.run-blue:focus, a.run-blue:hover, button.run-blue:focus, button.run-blue:hover
 }
 
 .run-orange {
-	background-color: #e87722!important
+	background-color: #ca500f!important
 }
 a.run-orange:focus, a.run-orange:hover, button.run-orange:focus, button.run-orange:hover {
 	background-color: #ec924e!important
@@ -5590,7 +5642,7 @@ a.run-orange:focus, a.run-orange:hover, button.run-orange:focus, button.run-oran
 }
 
 .run-green {
-	background-color: #4c8c2b!important
+	background-color: #428623!important
 }
 a.run-green:focus, a.run-green:hover, button.run-green:focus, button.run-green:hover {
 	background-color: #6fa355!important
@@ -5612,7 +5664,7 @@ a.run-pink:focus, a.run-pink:hover, button.run-pink:focus, button.run-pink:hover
 /*------------------SCOOPER BOWL------------------*/
 
 .scoop-pink {
-	background-color: #eb4498!important
+	background-color: #dc2784!important
 }
 a.scoop-pink:focus, a.scoop-pink:hover, button.scoop-pink:focus, button.scoop-pink:hover {
 	background-color: #ee71ab!important
@@ -5622,7 +5674,7 @@ a.scoop-pink:focus, a.scoop-pink:hover, button.scoop-pink:focus, button.scoop-pi
 }
 
 .scoop-blue {
-	background-color: #008fc5!important
+	background-color: #037cc2!important
 }
 a.scoop-blue:focus, a.scoop-blue:hover, button.scoop-blue:focus, button.scoop-blue:hover {
 	background-color: #009fcf!important
@@ -5634,7 +5686,7 @@ a.scoop-blue:focus, a.scoop-blue:hover, button.scoop-blue:focus, button.scoop-bl
 /*------------------WALK------------------*/
 
 .walk-blue {
-	background-color: #0096d6!important
+	background-color: #037cc2!important
 }
 a.walk-blue:focus, a.walk-blue:hover, button.walk-blue:focus, button.walk-blue:hover {
 	background-color: #43a6db!important
