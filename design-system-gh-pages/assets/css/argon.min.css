@@ -5364,7 +5364,7 @@ a.bg-dark:focus, a.bg-dark:hover, button.bg-dark:focus, button.bg-dark:hover {
 
 
 
-/*------------------OLD DF COLORS------------------
+/*------------------OLD DF COLORS------------------*/
 
 .df-red {
 	background-color: #9d2235!important
@@ -5374,9 +5374,9 @@ a.df-red:focus, a.df-red:hover, button.df-red:focus, button.df-red:hover {
 }
 .df-red-light {
 	background-color: #b95459!important
-}*/
+}
 
-/*------------------OLD JF COLORS------------------
+/*------------------OLD JF COLORS------------------*/
 
 .jf-blue {
 	background-color: #0060a9!important
@@ -5386,7 +5386,7 @@ a.bg-default:focus, a.jf-blue:hover, button.jf-blue:focus, button.jf-blue:hover 
 }
 .jf-blue-light {
 	background-color: #3380ba!important
-}*/
+}
 
 /*------------------New DF/JF COLORS------------------*/
 
