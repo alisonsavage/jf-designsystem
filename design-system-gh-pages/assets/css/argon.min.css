@@ -27,7 +27,7 @@
 	--cyan: #2bffc6;
 	--white: #fff;
 	--gray: #8898aa;
-	--gray-dark: #32325d;
+	--midnight: #003354;
 	--light: #ced4da;
 	--lighter: #e9ecef;
 	--primary: #00629B;
@@ -79,7 +79,7 @@ body {
 	line-height: 1.5;
 	margin: 0;
 	text-align: left;
-	color: #525f7f;
+	color: #003354;
 	background-color: #fff
 }
 [tabindex='-1']:focus {
@@ -298,7 +298,7 @@ template {
 	font-weight: 400;
 	line-height: 1.5;
 	margin-bottom: .5rem;
-	color: #32325d
+	color: #003354
 }
 .h1, h1 {
 	font-size: 2.5rem
@@ -316,7 +316,8 @@ template {
 	font-size: 1.25rem
 }
 .h6, h6 {
-	font-size: 1rem
+	font-size: 1rem;
+	font-weight:600;
 }
 .lead {
 	font-size: 1.25rem;
@@ -1214,7 +1215,7 @@ pre code {
 .table {
 	width: 100%;
 	margin-bottom: 1rem;
-	color: #525f7f;
+	color: #003354;
 	background-color: transparent
 }
 .table td, .table th {
@@ -1248,7 +1249,7 @@ pre code {
 	background-color: rgba(0, 0, 0, .05)
 }
 .table-hover tbody tr:hover {
-	color: #525f7f;
+	color: #003354;
 	background-color: rgba(0, 0, 0, .075)
 }
 .table-primary, .table-primary > td, .table-primary > th {
@@ -1410,7 +1411,7 @@ pre code {
 	background-color: #212529
 }
 .table .thead-light th {
-	color: #525f7f;
+	color: #003354;
 	border-color: #dee2e6;
 	background-color: #e9ecef
 }
@@ -1562,7 +1563,7 @@ select.form-control:focus::-ms-value {
 	margin-bottom: 0;
 	padding-top: .625rem;
 	padding-bottom: .625rem;
-	color: #525f7f;
+	color: #003354;
 	border: solid transparent;
 	border-width: 1px 0;
 	background-color: transparent
@@ -1834,7 +1835,7 @@ textarea.form-control {
 	transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 	text-align: center;
 	vertical-align: middle;
-	color: #525f7f;
+	color: #003354;
 	border: 1px solid transparent;
 	border-radius: .25rem;
 	background-color: transparent
@@ -1846,7 +1847,7 @@ textarea.form-control {
 }
 .btn:hover {
 	text-decoration: none;
-	color: #525f7f
+	color: #003354
 }
 .btn.focus, .btn:focus {
 	outline: 0;
@@ -2597,7 +2598,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
 	padding: .5rem 0;
 	list-style: none;
 	text-align: left;
-	color: #525f7f;
+	color: #003354;
 	border: 0 solid rgba(0, 0, 0, .15);
 	border-radius: .3rem;
 	background-color: #fff;
@@ -3109,7 +3110,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
 	color: #8898aa;
 	border: 1px solid #cad1d7;
 	border-radius: .25rem;
-	background: url('data:image/svg+xml,%3csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 4 5\'%3e%3cpath fill=\'%2332325d\' d=\'M2 0L0 2h4zm0 5L0 3h4z\'/%3e%3c/svg%3e') no-repeat right .75rem center/8px 10px;
+	background: url('data:image/svg+xml,%3csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 4 5\'%3e%3cpath fill=\'%23003354\' d=\'M2 0L0 2h4zm0 5L0 3h4z\'/%3e%3c/svg%3e') no-repeat right .75rem center/8px 10px;
 	background-color: #fff;
 	box-shadow: inset 0 1px 2px rgba(0, 0, 0, .075);
 	-webkit-appearance: none;
@@ -3396,7 +3397,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
 	background-color: transparent
 }
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-	color: #525f7f;
+	color: #003354;
 	border-color: #dee2e6 #dee2e6 #fff;
 	background-color: #fff
 }
@@ -4397,16 +4398,16 @@ a.badge:focus, a.badge:hover {
 .list-group-item-action {
 	width: 100%;
 	text-align: inherit;
-	color: #525f7f
+	color: #003354
 }
 .list-group-item-action:focus, .list-group-item-action:hover {
 	z-index: 1;
 	text-decoration: none;
-	color: #525f7f;
+	color: #003354;
 	background-color: #f6f9fc
 }
 .list-group-item-action:active {
-	color: #525f7f;
+	color: #003354;
 	background-color: #e9ecef
 }
 .list-group-item {
@@ -5131,7 +5132,7 @@ a.close.disabled {
 	font-size: 1rem;
 	margin-bottom: 0;
 	padding: .75rem .75rem;
-	color: #32325d;
+	color: #003354;
 	border-bottom: 1px solid #f2f2f2;
 	border-top-left-radius: calc(.3rem - 1px);
 	border-top-right-radius: calc(.3rem - 1px);
@@ -5142,7 +5143,7 @@ a.close.disabled {
 }
 .popover-body {
 	padding: .75rem .75rem;
-	color: #525f7f
+	color: #003354
 }
 .carousel {
 	position: relative
@@ -9179,7 +9180,7 @@ a.text-darker:focus, a.text-darker:hover {
 	color: #000!important
 }
 .text-body {
-	color: #525f7f!important
+	color: #003354!important
 }
 .text-muted {
 	color: #8898aa!important
@@ -9492,10 +9493,10 @@ a.bg-white:focus, a.bg-white:hover, button.bg-white:focus, button.bg-white:hover
 a.bg-gray:focus, a.bg-gray:hover, button.bg-gray:focus, button.bg-gray:hover {
 	background-color: #6a7e95!important
 }
-.bg-gray-dark {
-	background-color: #32325d!important
+.bg-midnight {
+	background-color: #003354!important
 }
-a.bg-gray-dark:focus, a.bg-gray-dark:hover, button.bg-gray-dark:focus, button.bg-gray-dark:hover {
+a.bg-midnight:focus, a.bg-midnight:hover, button.bg-midnight:focus, button.bg-midnight:hover {
 	background-color: #20203c!important
 }*/
 .bg-light {
@@ -9582,8 +9583,8 @@ a.bg-lighter:focus, a.bg-lighter:hover, button.bg-lighter:focus, button.bg-light
 .bg-gradient-gray {
 	background: linear-gradient(87deg, #8898aa 0, #888aaa 100%)!important
 }
-.bg-gradient-gray-dark {
-	background: linear-gradient(87deg, #32325d 0, #44325d 100%)!important
+.bg-gradient-midnight {
+	background: linear-gradient(87deg, #003354 0, #44325d 100%)!important
 }
 .bg-gradient-light {
 	background: linear-gradient(87deg, #ced4da 0, #cecfda 100%)!important
@@ -10262,7 +10263,7 @@ a.section-darker:focus, a.section-darker:hover, button.section-darker:focus, but
 	padding: .85em 1.375em
 }
 .badge-secondary {
-	color: #32325d
+	color: #003354
 }
 .btn .badge:not(:first-child) {
 	margin-left: .5rem
@@ -10904,7 +10905,7 @@ a.btn-icon-only {
 	color: #8898aa!important
 }
 .footer .footer-link:hover, .footer .nav .nav-item .nav-link:hover {
-	color: #525f7f!important
+	color: #003354!important
 }
 .footer .list-unstyled li a {
 	font-size: .85rem;
@@ -10913,7 +10914,7 @@ a.btn-icon-only {
 	color: #8898aa
 }
 .footer .list-unstyled li a:hover {
-	color: #525f7f
+	color: #003354
 }
 .footer .copyright {
 	font-size: .875rem
@@ -11228,7 +11229,7 @@ textarea[resize=horizontal] {
 }
 .list-group-heading {
 	font-size: 1rem;
-	color: #32325d
+	color: #003354
 }
 .list-group-heading > small {
 	font-weight: 500;
@@ -11442,7 +11443,7 @@ textarea[resize=horizontal] {
 	color: #fff
 }
 .nav-link {
-	color: #525f7f
+	color: #003354
 }
 .nav-link:hover {
 	color: #00629B
@@ -11532,7 +11533,7 @@ textarea[resize=horizontal] {
 	color: #fff
 }
 .navbar-light .navbar-brand {
-	color: #32325d
+	color: #003354
 }
 .navbar-nav .nav-item .media:not(:last-child) {
 	margin-bottom: 1.5rem
@@ -12270,7 +12271,7 @@ textarea[resize=horizontal] {
 	background: shapes-light-color('span-5-bg')
 }
 .section-shaped .shape-dark {
-	background: linear-gradient(150deg, #32325d 15%, #32325d 70%, #32325d 94%)
+	background: linear-gradient(150deg, #003354 15%, #003354 70%, #003354 94%)
 }
 .section-shaped .shape-dark:nth-child(1) {
 	background: #2e2e57
@@ -12387,7 +12388,7 @@ textarea[resize=horizontal] {
 	background: linear-gradient(150deg, shapes-light-color('step-1-gradient-bg') 15%, shapes-light-color('step-2-gradient-bg') 70%, shapes-light-color('step-3-gradient-bg') 94%)
 }
 .section-shaped .shape-style-1.shape-dark {
-	background: linear-gradient(150deg, #32325d 15%, #32325d 70%, #32325d 94%)
+	background: linear-gradient(150deg, #003354 15%, #003354 70%, #003354 94%)
 }
 .section-shaped .shape-style-2 span {
 	height: 190px
