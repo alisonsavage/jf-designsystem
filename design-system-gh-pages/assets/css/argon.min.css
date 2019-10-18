@@ -504,7 +504,7 @@ hr {
 code {
 	font-size: 87.5%;
 	word-break: break-word;
-	color: ##00629b;
+	color: #00629b;
 }
 a > code {
 	color: inherit
