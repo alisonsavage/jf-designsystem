@@ -300,33 +300,106 @@ template {
 	margin-bottom: .5rem;
 	color: #003354
 }
+
+/*-----H1-----*/
 .h1, h1 {
 	font-size: 2.5rem
 }
+/*-----H1 JF Web/Email-----*/
 .h1-jf{
 	font-size:42px;
 	font-family: Montserrat, Arial, sans-serif;
 	font-weight:700;
 	color:#000000;
 }
+@media only screen and (max-width: 1169px) and (min-width: 768px) {
+.h1-jf{
+	font-size:32px;
+}	
+}
+@media only screen and (max-width: 767px){
+.h1-jf{
+	font-size:26px;
+}	
+}
+
+/*-----H2-----*/
 .h2, h2 {
 	font-size: 20px;
 	font-weight: 600;
 	margin-top: 3rem;
 }
+/*-----H2 JF Web/Email-----*/
+.h2-jf{
+	font-size:30px;
+	font-family: Montserrat, Arial, sans-serif;
+	font-weight:700;
+	color:#000000;
+}
+@media only screen and (max-width: 1169px) and (min-width: 768px) {
+.h2-jf{
+	font-size:26px;
+}	
+}
+@media only screen and (max-width: 767px){
+.h2-jf{
+	font-size:24px;
+}
+
+/*-----H3-----*/
 .h3, h3 {
 	font-size: 1.75rem
 }
+/*-----H3 JF Web/Email-----*/
+.h3-jf{
+	font-size:22px;
+	font-family: Montserrat, Arial, sans-serif;
+	font-weight:700;
+	color:#000000;
+}
+@media only screen and (max-width: 1169px) and (min-width: 768px) {
+.h3-jf{
+	font-size:20px;
+}	
+}
+@media only screen and (max-width: 767px){
+.h3-jf{
+	font-size:20px;
+}
+
+/*-----H4-----*/
 .h4, h4 {
 	font-size: 1.5rem
 }
+/*-----H4 JF Web/Email-----*/
+.h4-jf{
+	font-size:18px;
+	font-family: Montserrat, Arial, sans-serif;
+	font-weight:700;
+	color:#000000;
+}
+@media only screen and (max-width: 1169px) and (min-width: 768px) {
+.h4-jf{
+	font-size:16px;
+}	
+}
+@media only screen and (max-width: 767px){
+.h4-jf{
+	font-size:16px;
+}
+
+/*-----H5-----*/
 .h5, h5 {
 	font-size: 1.25rem
 }
+	
+/*-----H6-----*/
 .h6, h6 {
 	font-size: 12px;
 	font-weight:600;
 }
+	
+
 .lead {
 	font-size: 1.25rem;
 	font-weight: 300
