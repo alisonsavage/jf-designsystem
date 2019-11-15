@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Start your development with a Design System for Bootstrap 4.">
   <meta name="author" content="Creative Tim">
-  <title>JF Design System - Lists</title>
+  <title>JF Design System - Grids</title>
   <!-- Extra details for Live View on GitHub Pages -->
   <!-- Canonical SEO -->
   <link rel="canonical" href="https://www.creative-tim.com/product/argon-design-system" />
@@ -141,11 +141,11 @@
       </div>
       <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 ct-content" role="main">
         <div class="ct-page-title">
-          <h1 class="ct-title" id="content">Lists</h1>
+          <h1 class="ct-title" id="content">Grids</h1>
           <div class="avatar-group mt-3">
           </div>
         </div>
-        <p class="ct-lead">Documentation and examples for bulleted and numbered list components on websites.</p>
+        <p class="ct-lead">Documentation and examples for grids containing images, text, and video.</p>
         <hr>
 		  
 		  
@@ -155,12 +155,22 @@
         <h2 id="bulleted">Bulleted Lists</h2>
         <p>Lists with the <code>.bulleted-list</code> class are used for listing registration packet contents, etc. List items are part of the <code>.bulleted-item</code> class.</p>
         <div class="bd-example">
-          <ul class="bulleted-list">
-				<li class="bulleted-item">Volunteers must be 18 or older</li>
-				<li class="bulleted-item">Volunteer registration is in the Champions Club at Fenway Park, on Ipswich Street</li>
-				<li class="bulleted-item">Dress casually and wear comfortable shoes; you will be provided with a t-shirt or hat, depending on your role</li>
-				<li class="bulleted-item">We encourage you to take public transportation as we are unable to provide volunteer parking; the closest MBTA stop is Kenmore</li>
-		  </ul>
+        	<div class="grid-row">
+				<div class="grid-box color-box">
+					<h3>COLLECT GIFTS</h3>
+					<p>Every dollar is one step closer to conquering cancer. Gifts may be collected online by credit card, as well as checks and money orders. Your donors can also support your walk through <a href="http://www.jimmyfund.org/ways-to-give/giving/matching-gifts/" target="_blank">matching gifts</a>, <a href="http://www.jimmyfund.org/ways-to-give/giving/give-stock/" target="_blank">gifts of stock</a>, and <a href="http://www.jimmyfund.org/ways-to-give/giving/daf-direct/" target="_blank">donor advised funds</a>.</p>
+					<p>Mail contributions* to:<br />
+					Boston Marathon Jimmy Fund Walk<br />
+					P.O. Box 3595<br />
+					Boston, MA 02241<br />
+					</p>
+					<p class="smalltext">*Include your name, # of checks, and your Participant ID on the outside of your envelope. Include your name and Participant ID on each check's memo line.</p>
+					<p>For more information, review the <a href="https://danafarber.jimmyfund.org/site/SPageServer/?pagename=jfw_faqs_cancer&fr_id=[[S80:trID]]">FAQs</a>. </p>
+				</div>
+				<div class="grid-box photo-box">
+					<img title="Collect gifts and contributions for the Boston Marathon Jimmy Fund Walk" alt="Help the Jimmy Fund Walk in the fight against cancer by collecting gifts and contributions" src="../images/content/pagebuilder/JFW_Web_TipsandTools_CollectGiftsImage_585.jpg" />
+				</div>
+			</div>
         </div>
 		<h6>HTML</h6>
         <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul class="bulleted-list"&gt;</span>
