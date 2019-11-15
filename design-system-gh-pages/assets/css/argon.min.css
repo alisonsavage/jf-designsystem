@@ -409,7 +409,7 @@ h1.cp-title {
 }
 
 /*-----UL Numbered-----*/
-.numbered-list {
+ul.numbered-list {
 	counter-reset: li;
 	list-style-type: none;
 	font-size: 14px;
@@ -417,7 +417,7 @@ h1.cp-title {
 	padding-left: 0px;
 }
 
-.numbered-list li:before {
+ul.numbered-list li:before {
 	content: counter(li);
 	counter-increment: li;
 	height: 35px;
@@ -433,26 +433,26 @@ h1.cp-title {
 	font-weight: bold;
 }
 
-.numbered-list li{
+ul.numbered-list li{
 	font-size: 18px;
 	padding: 5px 0px 5px 30px!important;
 }
 
-.numbered-list li .not-number{
+ul.numbered-list li .not-number{
 	font-size:16px;
 }
 
 @media only screen and (max-width: 1169px) and (min-width: 768px) {
-.numbered-list {
+ul.numbered-list {
 	line-height: 18px;
 }
-.numbered-list li .not-number{
+ul.numbered-list li .not-number{
 		font-size:15px;
 	}
 }
 
 @media only screen and (max-width: 767px){
-.numbered-list {
+ul.numbered-list {
 		counter-reset: li;
 		list-style-type: none;
 		font-size: 14px;
@@ -460,7 +460,7 @@ h1.cp-title {
 		padding-left: 10px;
 	}
 	
-.numbered-list li:before {
+ul.numbered-list li:before {
 		content: counter(li);
 		counter-increment: li;
 		height: 25px;
@@ -479,13 +479,13 @@ h1.cp-title {
 
 
 /*-----UL Bulleted-----*/
-.bulleted-list {
+ul.bulleted-list {
 	margin-top: 0;
 	-webkit-padding-start: 20px;
 }
 
 /*-----LI Bulleted-----*/
-.bulleted-item {
+li.bulleted-item {
 	font-size: 16px;
 	padding-bottom: 10px;
 	padding-left: 0;	
