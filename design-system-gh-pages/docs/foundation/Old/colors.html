@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Start your development with a Design System for Bootstrap 4.">
   <meta name="author" content="Creative Tim">
-  <title>JF Design System - Colors</title>
+  <title>JF Design - Colors</title>
   <!-- Extra details for Live View on GitHub Pages -->
   <!-- Canonical SEO -->
   <link rel="canonical" href="https://www.creative-tim.com/product/argon-design-system" />
@@ -53,34 +53,32 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
   <!-- End Google Tag Manager -->
   <!-- Favicon -->
-  <link href="https://alisonsavage.github.io/jf-designsystem/design-system-gh-pages/assets/img/brand/NewFavicon.png" rel="icon" type="image/png">
+  <link href="../../assets/img/brand/NewFavicon.png" rel="icon" type="image/png">
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
   <!-- Icons -->
-  <link href="https://alisonsavage.github.io/jf-designsystem/design-system-gh-pages/assets/vendor/nucleo/css/nucleo.css" rel="stylesheet">
-  <link href="https://alisonsavage.github.io/jf-designsystem/design-system-gh-pages/assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="../../assets/vendor/nucleo/css/nucleo.css" rel="stylesheet">
+  <link href="../../assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <!-- Argon CSS -->
-  <link type="text/css" href="https://alisonsavage.github.io/jf-designsystem/design-system-gh-pages/assets/css/argon.min.css" rel="stylesheet">
+  <link type="text/css" href="../../assets/css/argon.min.css" rel="stylesheet">
   <!-- Docs CSS -->
-  <link type="text/css" href="https://alisonsavage.github.io/jf-designsystem/design-system-gh-pages/assets/css/docs.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
-
+  <link type="text/css" href="../../assets/css/docs.min.css" rel="stylesheet">
 </head>
 
 <body>
  <header class="navbar navbar-expand navbar-dark flex-row align-items-md-center ct-navbar">
-    <!--<a class="navbar-brand mr-0 mr-md-2" href="https://alisonsavage.github.io/jf-designsystem/design-system-gh-pages/docs/getting-started/overview.html" aria-label="Bootstrap">
-      <img src="https://alisonsavage.github.io/jf-designsystem/design-system-gh-pages/assets/img/brand/white.png">
+    <a class="navbar-brand mr-0 mr-md-2" href="../../docs/getting-started/overview.html" aria-label="Bootstrap">
+      <img src="../../assets/img/brand/white.png">
       <sup>Docs</sup>
     </a>
     <ul class="navbar-nav flex-row mr-auto ml-4 d-none d-md-flex">
       <li class="nav-item">
-        <a class="nav-link" href="https://alisonsavage.github.io/jf-designsystem/index.html">Live Preview</a>
+        <a class="nav-link" href="../../index.html">Live Preview</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="https://github.com/creativetimofficial/argon-design-system/issues" target="_blank">Support</a>
       </li>
-    </ul>-->
+    </ul>
     <div class="d-none d-sm-block ml-auto">
       <ul class="navbar-nav ct-navbar-nav flex-row align-items-center">
         <li class="nav-item dropdown d-none">
@@ -90,17 +88,17 @@
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-link-icon" href="https://www.facebook.com/thejimmyfund/" target="_blank">
+          <a class="nav-link nav-link-icon" href="https://www.facebook.com/creativetim" target="_blank">
             <i class="fa fa-facebook-square"></i>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-link-icon" href="https://twitter.com/TheJimmyFund" target="_blank">
+          <a class="nav-link nav-link-icon" href="https://twitter.com/creativetim" target="_blank">
             <i class="fa fa-twitter"></i>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-link-icon" href="https://www.instagram.com/thejimmyfund/" target="_blank">
+          <a class="nav-link nav-link-icon" href="https://www.instagram.com/creativetimofficial" target="_blank">
             <i class="fa fa-instagram"></i>
           </a>
         </li>
@@ -127,12 +125,95 @@
     </button>
   </header>
 
-
-	
+  <!--SIDE NAV Reusable-->
+  <script>
+	  $(function() {
+		  $("#sidenav").load("../../sidenav.html");
+	  });
+  </script>
   <div class="container-fluid">
     <div class="row flex-xl-nowrap">
-      <!--SIDE NAV Reusable-->
-		[[S51:reus_designsystem_nav]]
+      <div class="col-12 col-md-3 col-xl-2 ct-sidebar">
+        <nav class="collapse ct-links" id="ct-docs-nav">
+          <div class="ct-toc-item active">
+            <a class="ct-toc-link" href="../../docs/getting-started/overview.html">Getting started</a>
+            <ul class="nav ct-sidenav">
+              <li>
+                <a href="../../docs/getting-started/overview.html">Overview</a></li>
+            <!--  <li>
+                <a href="../../docs/getting-started/download.html">Download</a></li>
+              <li>
+                <a href="../../docs/getting-started/quick-start.html">Quick start</a></li>
+              <li>
+                <a href="../../docs/getting-started/license.html">License</a></li>
+              <li>
+                <a href="../../docs/getting-started/contents.html">Contents</a></li>
+              <li>
+                <a href="../../docs/getting-started/build-tools.html">Build tools</a></li> -->
+            </ul>
+          </div>
+          <!-- Show links for all groups -->
+          <div class="ct-toc-item active">
+            <a class="ct-toc-link" href="../../docs/foundation/colors.html">Foundation</a>
+            <ul class="nav ct-sidenav">
+              <li class="active ct-sidenav-active">
+                <a href="../../docs/foundation/colors.html">Colors</a></li>
+             <!-- <li>
+                <a href="../../docs/foundation/grid.html">Grid</a></li>
+              <li>
+                <a href="../../docs/foundation/typography.html">Typography</a></li>
+              <li>
+                <a href="../../docs/foundation/icons.html">Icons</a></li> -->
+            </ul>
+          </div>
+          <!-- Show links for all groups -->
+          <div class="ct-toc-item active">
+            <a class="ct-toc-link" href="../../docs/components/banners.html">Components</a>
+            <ul class="nav ct-sidenav">
+              <!--<li>
+                <a href="../../docs/components/alerts.html">Alerts</a></li>
+              <li>
+                <a href="../../docs/components/badge.html">Badge</a></li> -->
+              <li>
+                <a href="../../docs/components/banners.html">Banners</a></li>
+			 <!-- <li>
+                <a href="../../docs/components/buttons.html">Buttons</a></li>
+              <li>
+                <a href="../../docs/components/carousel.html">Carousel</a></li>
+              <li>
+                <a href="../../docs/components/dropdowns.html">Dropdowns</a></li>
+              <li>
+                <a href="../../docs/components/forms.html">Forms</a></li>
+              <li>
+                <a href="../../docs/components/modal.html">Modal</a></li>
+              <li>
+                <a href="../../docs/components/navs.html">Navs</a></li>
+              <li>
+                <a href="../../docs/components/navbar.html">Navbar</a></li>
+              <li>
+                <a href="../../docs/components/pagination.html">Pagination</a></li>
+              <li>
+                <a href="../../docs/components/popovers.html">Popovers</a></li>
+              <li>
+                <a href="../../docs/components/progress.html">Progress</a></li>
+              <li>
+                <a href="../../docs/components/tooltips.html">Tooltips</a></li> -->
+            </ul>
+          </div>
+          <!-- Show links for all groups -->
+         <!--    <div class="ct-toc-item active">
+            <a class="ct-toc-link" href="../../docs/plugins/datepicker.html">Plugins</a>
+           <ul class="nav ct-sidenav">
+              <li>
+                <a href="../../docs/plugins/datepicker.html">Datepicker</a></li>
+              <li>
+                <a href="../../docs/plugins/headroom.html">Headroom</a></li>
+              <li>
+                <a href="../../docs/plugins/sliders.html">Sliders</a></li>
+            </ul> 
+          </div> -->
+        </nav>
+      </div>
       <div class="d-none d-xl-block col-xl-2 ct-toc">
         <ul class="section-nav">
           <li class="toc-entry toc-h2"><a href="#primary-colors">Primary colors</a></li>
@@ -164,29 +245,27 @@
           <div class="avatar-group mt-3">
           </div>
         </div>
-        <p class="ct-lead">Intro to JF color palette...</p>
+        <p class="ct-lead">Get started with Bootstrap, the world’s most popular framework for building responsive, mobile-first sites, with BootstrapCDN and a template starter page.</p>
         <hr>
 		
         <h2 id="primary-colors">Primary colors</h2>
-        <p>The Dana-Farber primary colors serve as a foundational palette that work universally across all of the Jimmy Fund&#8217;s brand experience.<br/><br/>Consisting of white and monochromatic increments of gray and Dana-Farber Blue and Amber, these colors will anchor and balance color expressions and can be complimented with the accent color palette.</p>
-		  
-		<!------------------DF-BLUE------------------>
+        <p>Our primary palette is comprised of neutrals, red, and blue. These colors are present across most touch points from marketing to product.</p>
         <div class="row">
           <div class="col-lg-4 col-md-6">
             <div class="color-swatch">
-              <div class="color-swatch-header df-blue">
+              <div class="color-swatch-header df-red">
               </div>
               <div class="color-swatch-body">
                 <div class="prop-item-wrap">
                   <div class="prop-item">
                     <div class="label">Name</div>
-                    <div class="value">df-blue</div>
+                    <div class="value">df-red</div>
                   </div>
                 </div>
                 <div class="prop-item-wrap">
                   <div class="prop-item">
                     <div class="label">Hex</div>
-                    <div class="value">#00629B</div>
+                    <div class="value">#9d2235</div>
                   </div>
                 </div>
               </div>
@@ -194,175 +273,42 @@
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="color-swatch">
-              <div class="color-swatch-header df-blue-accent">
+              <div class="color-swatch-header df-red-light">
               </div>
               <div class="color-swatch-body">
                 <div class="prop-item-wrap">
                   <div class="prop-item">
                     <div class="label">Name</div>
-                    <div class="value">df-blue-accent</div>
+                    <div class="value">df-red-light</div>
                   </div>
                 </div>
                 <div class="prop-item-wrap">
                   <div class="prop-item">
                     <div class="label">Hex</div>
-                    <div class="value">#00609C</div>
+                    <div class="value">#b95459</div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 		</div>
-		
-		<!------------------DF-SKY------------------>
-		<div class="row">
-          <div class="col-lg-4 col-md-6">
-            <div class="color-swatch">
-              <div class="color-swatch-header df-sky">
-              </div>
-              <div class="color-swatch-body">
-                <div class="prop-item-wrap">
-                  <div class="prop-item">
-                    <div class="label">Name</div>
-                    <div class="value">df-sky</div>
-                  </div>
-                </div>
-                <div class="prop-item-wrap">
-                  <div class="prop-item">
-                    <div class="label">Hex</div>
-                    <div class="value">#41B6E6</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="color-swatch">
-              <div class="color-swatch-header df-sky-accent">
-              </div>
-              <div class="color-swatch-body">
-                <div class="prop-item-wrap">
-                  <div class="prop-item">
-                    <div class="label">Name</div>
-                    <div class="value">df-sky-accent</div>
-                  </div>
-                </div>
-                <div class="prop-item-wrap">
-                  <div class="prop-item">
-                    <div class="label">Hex</div>
-                    <div class="value">#40B4E2</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-		
-		<!------------------DF-AMBER------------------>  
-		<div class="row">
-          <div class="col-lg-4 col-md-6">
-            <div class="color-swatch">
-              <div class="color-swatch-header df-amber">
-              </div>
-              <div class="color-swatch-body">
-                <div class="prop-item-wrap">
-                  <div class="prop-item">
-                    <div class="label">Name</div>
-                    <div class="value">df-amber</div>
-                  </div>
-                </div>
-                <div class="prop-item-wrap">
-                  <div class="prop-item">
-                    <div class="label">Hex</div>
-                    <div class="value">#FFA300</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="color-swatch">
-              <div class="color-swatch-header df-amber-accent">
-              </div>
-              <div class="color-swatch-body">
-                <div class="prop-item-wrap">
-                  <div class="prop-item">
-                    <div class="label">Name</div>
-                    <div class="value">df-amber-accent</div>
-                  </div>
-                </div>
-                <div class="prop-item-wrap">
-                  <div class="prop-item">
-                    <div class="label">Hex</div>
-                    <div class="value">#FAA21B</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-		
-		<!------------------DF-GRAY------------------>  
-		<div class="row">
-          <div class="col-lg-4 col-md-6">
-            <div class="color-swatch">
-              <div class="color-swatch-header df-gray">
-              </div>
-              <div class="color-swatch-body">
-                <div class="prop-item-wrap">
-                  <div class="prop-item">
-                    <div class="label">Name</div>
-                    <div class="value">df-gray</div>
-                  </div>
-                </div>
-                <div class="prop-item-wrap">
-                  <div class="prop-item">
-                    <div class="label">Hex</div>
-                    <div class="value">#63666A</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="color-swatch">
-              <div class="color-swatch-header df-gray-accent">
-              </div>
-              <div class="color-swatch-body">
-                <div class="prop-item-wrap">
-                  <div class="prop-item">
-                    <div class="label">Name</div>
-                    <div class="value">df-gray-accent</div>
-                  </div>
-                </div>
-                <div class="prop-item-wrap">
-                  <div class="prop-item">
-                    <div class="label">Hex</div>
-                    <div class="value">#6E6F71</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
 		  
-		<!------------------DF-MIDNIGHT and DF-DARK-GRAY------------------>  
 		<div class="row">
           <div class="col-lg-4 col-md-6">
             <div class="color-swatch">
-              <div class="color-swatch-header df-midnight">
+              <div class="color-swatch-header jf-blue">
               </div>
               <div class="color-swatch-body">
                 <div class="prop-item-wrap">
                   <div class="prop-item">
                     <div class="label">Name</div>
-                    <div class="value">df-midnight</div>
+                    <div class="value">jf-blue</div>
                   </div>
                 </div>
                 <div class="prop-item-wrap">
                   <div class="prop-item">
                     <div class="label">Hex</div>
-                    <div class="value">#003354</div>
+                    <div class="value">#0060a9</div>
                   </div>
                 </div>
               </div>
@@ -370,26 +316,25 @@
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="color-swatch">
-              <div class="color-swatch-header df-dark-gray">
+              <div class="color-swatch-header jf-blue-light">
               </div>
               <div class="color-swatch-body">
                 <div class="prop-item-wrap">
                   <div class="prop-item">
                     <div class="label">Name</div>
-                    <div class="value">df-dark-gray</div>
+                    <div class="value">jf-blue-light</div>
                   </div>
                 </div>
                 <div class="prop-item-wrap">
                   <div class="prop-item">
                     <div class="label">Hex</div>
-                    <div class="value">#4D4D4F</div>
+                    <div class="value">#3380ba</div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-		  
 		
 <!------------------NEUTRALS------------------>
 		  
@@ -1015,7 +960,7 @@
                 <div class="prop-item-wrap">
                   <div class="prop-item">
                     <div class="label">Hex</div>
-                    <div class="value">#428623</div>
+                    <div class="value">#64a84a</div>
                   </div>
                 </div>
               </div>
@@ -1023,7 +968,7 @@
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="color-swatch">
-              <div class="color-swatch-header bg-gray">
+              <div class="color-swatch-header golf-green-light">
               </div>
               <div class="color-swatch-body">
                 <div class="prop-item-wrap">
@@ -1035,7 +980,7 @@
                 <div class="prop-item-wrap">
                   <div class="prop-item">
                     <div class="label">Hex</div>
-                    <div class="value">TBD</div>
+                    <div class="value">#83b96e</div>
                   </div>
                 </div>
               </div>
@@ -1684,7 +1629,7 @@
                 <div class="prop-item-wrap">
                   <div class="prop-item">
                     <div class="label">Hex</div>
-                    <div class="value">#ca500f</div>
+                    <div class="value">#e87722</div>
                   </div>
                 </div>
               </div>
@@ -1692,7 +1637,7 @@
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="color-swatch">
-              <div class="color-swatch-header bg-gray">
+              <div class="color-swatch-header run-orange-light">
               </div>
               <div class="color-swatch-body">
                 <div class="prop-item-wrap">
@@ -1704,7 +1649,7 @@
                 <div class="prop-item-wrap">
                   <div class="prop-item">
                     <div class="label">Hex</div>
-                    <div class="value">TBD</div>
+                    <div class="value">#ec924e</div>
                   </div>
                 </div>
               </div>
@@ -1727,7 +1672,7 @@
                 <div class="prop-item-wrap">
                   <div class="prop-item">
                     <div class="label">Hex</div>
-                    <div class="value">#428623</div>
+                    <div class="value">#4c8c2b</div>
                   </div>
                 </div>
               </div>
@@ -1735,7 +1680,7 @@
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="color-swatch">
-              <div class="color-swatch-header bg-gray">
+              <div class="color-swatch-header run-green-light">
               </div>
               <div class="color-swatch-body">
                 <div class="prop-item-wrap">
@@ -1747,7 +1692,7 @@
                 <div class="prop-item-wrap">
                   <div class="prop-item">
                     <div class="label">Hex</div>
-                    <div class="value">TBD</div>
+                    <div class="value">#6fa355</div>
                   </div>
                 </div>
               </div>
@@ -1817,7 +1762,7 @@
                 <div class="prop-item-wrap">
                   <div class="prop-item">
                     <div class="label">Hex</div>
-                    <div class="value">#dc2784</div>
+                    <div class="value">#eb4498</div>
                   </div>
                 </div>
               </div>
@@ -1825,7 +1770,7 @@
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="color-swatch">
-              <div class="color-swatch-header bg-gray">
+              <div class="color-swatch-header scoop-pink-light">
               </div>
               <div class="color-swatch-body">
                 <div class="prop-item-wrap">
@@ -1837,7 +1782,7 @@
                 <div class="prop-item-wrap">
                   <div class="prop-item">
                     <div class="label">Hex</div>
-                    <div class="value">TBD</div>
+                    <div class="value">#ee71ab</div>
                   </div>
                 </div>
               </div>
@@ -1860,7 +1805,7 @@
                 <div class="prop-item-wrap">
                   <div class="prop-item">
                     <div class="label">Hex</div>
-                    <div class="value">#037cc2</div>
+                    <div class="value">#008fc5</div>
                   </div>
                 </div>
               </div>
@@ -1868,7 +1813,7 @@
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="color-swatch">
-              <div class="color-swatch-header bg-gray">
+              <div class="color-swatch-header scoop-blue-light">
               </div>
               <div class="color-swatch-body">
                 <div class="prop-item-wrap">
@@ -1880,7 +1825,7 @@
                 <div class="prop-item-wrap">
                   <div class="prop-item">
                     <div class="label">Hex</div>
-                    <div class="value">TBD</div>
+                    <div class="value">#009fcf</div>
                   </div>
                 </div>
               </div>
@@ -1950,7 +1895,7 @@
                 <div class="prop-item-wrap">
                   <div class="prop-item">
                     <div class="label">Hex</div>
-                    <div class="value">#037cc2</div>
+                    <div class="value">#0096d6</div>
                   </div>
                 </div>
               </div>
@@ -1958,7 +1903,7 @@
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="color-swatch">
-              <div class="color-swatch-header bg-gray">
+              <div class="color-swatch-header walk-blue-light">
               </div>
               <div class="color-swatch-body">
                 <div class="prop-item-wrap">
@@ -1970,7 +1915,7 @@
                 <div class="prop-item-wrap">
                   <div class="prop-item">
                     <div class="label">Hex</div>
-                    <div class="value">TBD</div>
+                    <div class="value">#43a6db</div>
                   </div>
                 </div>
               </div>
@@ -2005,69 +1950,11 @@
       </main>
     </div>
   </div>
-	
   <!-- Core -->
-	
-  <!--Pulled from LO-->
-	<script src="https://use.fontawesome.com/ac43c2a4c5.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/luminateExtend/1.7.1/luminateExtend.min.js"></script>
-	<script>
-	  luminateExtend({
-		apiKey: 'wDB09SQODRpVIOvX', 
-		path: {
-		  nonsecure: 'http://danafarber.jimmyfund.org/site/', 
-		  secure: 'https://danafarber.jimmyfund.org/site/'
-		}
-	  });
-	</script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"></script>
-	
-	<script type="text/javascript">
-	var currentURL = window.location.href;
-
-
-</script>
-
-<script type="text/javascript">
-Y.use('jquery-noconflict', function() {
-  jQuery(document).ready(function($) {
-
-    $('.footer-share-link').on('click', function() {
-      console.log('hit');
-
-      console.log('this', $(this));
-
-      if($(this).hasClass('share-open')) {
-        $(this).removeClass('share-open');
-
-        $('.footer-share-container').hide();
-      } else {
-        $(this).addClass('share-open');
-        $('.footer-share-container').show();
-      }
-    });
-
-    var share_close_btn = $('.footer-share-container button.close');
-
-    $(share_close_btn).on('click', function() {
-      if($('.footer-share-link').hasClass('share-open')) {
-        $('.footer-share-link').removeClass('share-open');
-
-        $('.footer-share-container').hide();
-      }
-    });
-
-    $('#don_timeout_retry_link a').contents().unwrap();
-  });
-});
-
-</script>
-	
-	<!--Argon template-->
-  <script src="https://alisonsavage.github.io/jf-designsystem/design-system-gh-pages/assets/vendor/popper/popper.min.js"></script>
-  <script src="https://alisonsavage.github.io/jf-designsystem/design-system-gh-pages/assets/vendor/bootstrap/bootstrap.min.js"></script>
-  <script src="https://alisonsavage.github.io/jf-designsystem/design-system-gh-pages/assets/vendor/headroom/headroom.min.js"></script>
+  <script src="../../assets/vendor/jquery/jquery.min.js"></script>
+  <script src="../../assets/vendor/popper/popper.min.js"></script>
+  <script src="../../assets/vendor/bootstrap/bootstrap.min.js"></script>
+  <script src="../../assets/vendor/headroom/headroom.min.js"></script>
   <script type="text/javascript">
     $(document).ready(function() {
       // $('a[href="#"]:not([data-toggle="dropdown])').click(function() {
@@ -2108,7 +1995,7 @@ Y.use('jquery-noconflict', function() {
         s = b.getElementsByTagName(e)[0];
         s.parentNode.insertBefore(t, s)
       }(window,
-        document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+        document, 'script', '//connect.facebook.net/en_US/fbevents.js');
 
       try {
         fbq('init', '111649226022273');
@@ -2124,27 +2011,13 @@ Y.use('jquery-noconflict', function() {
     <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=111649226022273&ev=PageView&noscript=1" />
   </noscript>
   <!-- Docs JS -->
-  <script src="https://alisonsavage.github.io/jf-designsystem/design-system-gh-pages/assets/js/vendor/anchor.min.js"></script>
-  <script src="https://alisonsavage.github.io/jf-designsystem/design-system-gh-pages/assets/js/vendor/clipboard.min.js"></script>
-  <script src="https://alisonsavage.github.io/jf-designsystem/design-system-gh-pages/assets/js/vendor/holder.min.js"></script>
-  <script src="https://alisonsavage.github.io/jf-designsystem/design-system-gh-pages/assets/js/vendor/prism.min.js"></script>
-  <script src="https://alisonsavage.github.io/jf-designsystem/design-system-gh-pages/assets/js/docs.min.js"></script>
+  <script src="../../assets/js/vendor/anchor.min.js"></script>
+  <script src="../../assets/js/vendor/clipboard.min.js"></script>
+  <script src="../../assets/js/vendor/holder.min.js"></script>
+  <script src="../../assets/js/vendor/prism.min.js"></script>
+  <script src="../../assets/js/docs.min.js"></script>
   <!-- Argon JS -->
-  <script src="https://alisonsavage.github.io/jf-designsystem/design-system-gh-pages/assets/js/argon.min.js"></script>
-<script>
-	$(function(){
-    // this will get the full URL at the address bar
-    var url = window.location.href; 
-
-    // passes on every "a" tag 
-    $("#ct-docs-nav a").each(function() {
-            // checks if its the same on the address bar
-        if(url == (this.href)) { 
-            $(this).closest("li").addClass("active ct-sidenav-active");
-        }
-    });
-});
-	</script>
+  <script src="../../assets/js/argon.min.js"></script>
 </body>
 
 </html>

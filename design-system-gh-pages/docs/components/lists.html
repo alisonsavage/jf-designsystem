@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Start your development with a Design System for Bootstrap 4.">
   <meta name="author" content="Creative Tim">
-  <title>JF Design System - Typography</title>
+  <title>JF Design System - Lists</title>
   <!-- Extra details for Live View on GitHub Pages -->
   <!-- Canonical SEO -->
   <link rel="canonical" href="https://www.creative-tim.com/product/argon-design-system" />
@@ -141,11 +141,11 @@
       </div>
       <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 ct-content" role="main">
         <div class="ct-page-title">
-          <h1 class="ct-title" id="content">Typography</h1>
+          <h1 class="ct-title" id="content">Lists</h1>
           <div class="avatar-group mt-3">
           </div>
         </div>
-        <p class="ct-lead">Documentation and examples for brand typography, including standards for print as well as web and email.</p>
+        <p class="ct-lead">Documentation and examples for ordered and unordered list components on websites.</p>
         <hr>
 		  
 		  
@@ -153,31 +153,38 @@
 		  
 		<!------------------PRINT------------------>		  
 		  
-        <h2 id="print">Print</h2>
-        <p>The primary typeface for all Dana-Farber communications, Univers, is made up of five weights: Light, Roman, Bold, and Black. For each weight there is also an Oblique version. The majority of Dana-Farber&#8217;s communications should be set in Univers Roman, with light and heavier weights serving as heads, subheads, or in creative typographic applications.</p>
-        <div class="bd-example bd-example-type">
-          <table class="table">
-            <tbody>
-              <tr>
-                <td><h6>Univers Light</h6><img src="https://secure2.convio.net/dfci/images/content/pagebuilder/Web_Light.png" alt="Univers Light sample" style="max-width:250px;padding:5px 0px"></td>
-				<td><h6>Univers Bold</h6><img src="https://secure2.convio.net/dfci/images/content/pagebuilder/Web_Bold.png" alt="Univers Bold sample" style="max-width:250px;padding:5px 0px"></td>
-              </tr>
-              <tr>
-                <td><h6>Univers Light Oblique</h6><img src="https://secure2.convio.net/dfci/images/content/pagebuilder/Web_LightOblique.png" alt="Univers Light Oblique sample" style="max-width:250px;padding:5px 0px"></td>
-				<td><h6>Univers Bold Oblique</h6><img src="https://secure2.convio.net/dfci/images/content/pagebuilder/Web_BoldOblique.png" alt="Univers Bold Oblique sample" style="max-width:250px;padding:5px 0px"></td>
-              </tr>
-              <tr>
-                <td><h6>Univers Roman</h6><img src="https://secure2.convio.net/dfci/images/content/pagebuilder/Web_Roman.png" alt="Univers Roman sample" style="max-width:250px;padding:5px 0px"></td>
-				<td><h6>Univers Black</h6><img src="https://secure2.convio.net/dfci/images/content/pagebuilder/Web_Black.png" alt="Univers Black sample" style="max-width:250px;padding:5px 0px"></td>
-				
-              </tr>
-              <tr>
-                <td><h6>Univers Roman Oblique</h6><img src="https://secure2.convio.net/dfci/images/content/pagebuilder/Web_RomanOblique.png" alt="Univers Roman Oblique sample" style="max-width:250px;padding:5px 0px"></td>
-				<td><h6>Univers Black Oblique</h6><img src="https://secure2.convio.net/dfci/images/content/pagebuilder/Web_BlackOblique.png" alt="Univers Black Oblique sample" style="max-width:250px;padding:5px 0px"></td>
-              </tr>
-            </tbody>
-          </table>
+        <h2 id="print">Unordered Lists</h2>
+        <p>H1 tags with the <code>.cp-title</code> class are used at the top of content pages without banner headers.</p>
+        <div class="bd-example">
+          <ul class="ulun-jf">
+				<li class="liun-jf">Volunteers must be 18 or older</li>
+				<li class="liun-jf">Volunteer registration is in the Champions Club at Fenway Park, on Ipswich Street</li>
+				<li class="liun-jf">Dress casually and wear comfortable shoes; you will be provided with a t-shirt or hat, depending on your role</li>
+				<li class="liun-jf">We encourage you to take public transportation as we are unable to provide volunteer parking; the closest MBTA stop is Kenmore</li>
+		  </ul>
         </div>
+		<h6>HTML</h6>
+        <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul&gt;</span>
+		<span class="nt">&lt;li&gt;Volunteers must be 18 or older&lt;/li&gt;</span>
+		<span class="nt">&lt;li&gt;Volunteer registration is in the Champions Club at Fenway Park, on Ipswich Street&lt;/li&gt;</span>
+		<span class="nt">&lt;li&gt;Dress casually and wear comfortable shoes; you will be provided with a t-shirt or hat, depending on your role&lt;/li&gt;</span>
+		<span class="nt">&lt;li&gt;We encourage you to take public transportation as we are unable to provide volunteer parking; the closest MBTA stop is Kenmore&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre>
+        </figure>
+		  
+		
+		<h6>CSS</h6>  
+		<figure class="highlight"><pre><code class="language-scss" data-lang="scss">ul {
+	    margin-top: 0;
+	    -webkit-padding-start: 20px;
+	}
+	
+	li {
+	    font-size: 16px;
+	    padding-bottom: 10px;
+	    padding-left: 0;	
+	}</code></pre>
+        </figure>
 		  
 		  
 		  
