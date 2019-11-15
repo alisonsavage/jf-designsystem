@@ -433,10 +433,22 @@ h1.cp-title {
 	font-weight: bold;
 }
 
+.numbered-list li{
+	font-size: 18px;
+	padding: 5px 0px 5px 30px!important;
+}
+
+.numbered-list li .not-number{
+	font-size:16px;
+}
+
 @media only screen and (max-width: 1169px) and (min-width: 768px) {
 .numbered-list {
 	line-height: 18px;
-}	
+}
+.numbered-list li .not-number{
+		font-size:15px;
+	}
 }
 
 @media only screen and (max-width: 767px){
