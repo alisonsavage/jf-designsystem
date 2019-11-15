@@ -415,13 +415,13 @@ h1.cp-title {
 
 
 /*-----UL Unordered-----*/
-ul.ul-un-jf {
+.ul-un-jf {
 	    margin-top: 0;
 	    -webkit-padding-start: 20px;
 	}
 
 /*-----LI Unordered-----*/
-li.li-un-jf {
+.li-un-jf {
 	    font-size: 16px;
 	    padding-bottom: 10px;
 	    padding-left: 0;	
