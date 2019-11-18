@@ -350,6 +350,10 @@ template {
     height: 460px;
     overflow: hidden;
 }
+.photo-box img {
+	min-height: 460px;
+	max-width: 585px;
+	display: block;}	
 }
 
 @media only screen and (max-width: 767px) {
