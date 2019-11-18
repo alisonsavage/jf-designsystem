@@ -302,11 +302,16 @@ template {
     table-layout: fixed;
     margin: 0 auto;
     width: auto;
+	background-color: #f6f6f6;
 }
 
-.grid-box {
+.grid-row .text-box {
+	padding: 125px 40px 40px 40px;
+}
+
+.text-box {
 	display: table-cell;
-	vertical-align: top;
+	vertical-align: middle;
 	position: relative;
 	padding: 50px 40px 40px 40px;
 }
@@ -319,23 +324,10 @@ template {
     margin-bottom: 0px;
 }
 
-@media only screen and (max-width: 767px) {
-.half-width{
-	width: 100%;
-}
-}
-
 .photo-box {
 	padding: 0px;
 }
 
-.text-box {
-	vertical-align: middle;
-}
-
-.color-box {
-	background-color: #f6f6f6;
-}
 
 @media only screen and (max-width: 1169px) {
 .grid-row {
@@ -353,13 +345,27 @@ template {
 .photo-box img {
 	min-height: 460px;
 	max-width: 585px;
-	display: block;}	
+	display: block;
+	}		
+.grid-row .text-box {
+	padding: 75px 40px 40px 40px;
+}
 }
 
 @media only screen and (max-width: 767px) {
 .grid-row {
 	margin-left: -10px;
 	margin-right: -10px;	
+}
+.half-width{
+	width: 100%;
+}
+.grid-row .text-box {
+	padding: 40px 40px 20px;
+}
+.grid-row .photo-box {
+	width: 100%;
+		margin-left: 0;
 }
 }
 
