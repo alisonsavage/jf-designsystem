@@ -308,8 +308,21 @@ template {
 	display: table-cell;
 	vertical-align: top;
 	position: relative;
-	padding: 50px 35px 23px 35px;
+	padding: 50px 40px 40px 40px;
+}
+
+.half-width{
 	width: 50%;
+    display: inline-block;
+    float: left;
+    vertical-align: top;
+    margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 767px) {
+.half-width{
+	width: 100%;
+}
 }
 
 .photo-box {
@@ -329,6 +342,14 @@ template {
 .grid-row {
 	margin-left: -20px;
 	margin-right: -20px;	
+}
+}
+
+@media only screen and (max-width: 1169px) and (min-width: 768px) {
+.grid-row {
+	display: block;
+    height: 460px;
+    overflow: hidden;
 }
 }
 
