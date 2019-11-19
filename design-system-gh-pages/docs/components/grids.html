@@ -135,8 +135,7 @@
 		[[S51:reus_designsystem_nav]]
       <div class="d-none d-xl-block col-xl-2 ct-toc">
         <ul class="section-nav">
-		  <li class="toc-entry toc-h2"><a href="#bulleted">Bulleted</a></li>
-          <li class="toc-entry toc-h2"><a href="#numbered">Numbered</a></li>
+		  <li class="toc-entry toc-h2"><a href="#twobyone">2 X 1</a></li><li class="toc-entry toc-h2"><a href="#twobytwo">2 X 2</a></li>
         </ul>
       </div>
       <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 ct-content" role="main">
@@ -149,10 +148,138 @@
         <hr>
 		  
 		  
-		<!------------------BULLETED LISTS------------------>		  
+		<!------------------2 x 2 GRID------------------>		  
 		  
 		  
-        <h2 id="bulleted">Bulleted Lists</h2>
+        <h2 id="twobyone">2 X 1 Grid</h2>
+        <p>Lists with the <code>.bulleted-list</code> class are used for listing registration packet contents, etc. List items are part of the <code>.bulleted-item</code> class.</p>
+       
+		  
+		  
+		  
+		  <div class="grid-row" style="margin-bottom:20px">
+		<div class="grid-box photo-box half-width">
+			<img src="../images/content/pagebuilder/RDF_Web_JF5K_RunnersReceive_585.jpg" title="Learn what Jimmy Fund 5K &amp; Fun Run runners receive" alt="Jimmy Fund 5K &amp; Fun Run participants will help to raise money to cure cancer">
+		</div>
+		<div class="grid-box text-box half-width">
+			<h3 class="h3-jf">SAMPLE HEADER</h3>
+			<p>Sample text Sample text Sample text Sample text Sample text Sample</p>
+			<ul>
+				<li>List item 1</li>
+				<li>List item 2</li>
+				<li>List item 3</li>
+			</ul>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+		  
+		  
+		  
+		<h6>HTML</h6>
+        <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div class="grid-row"&gt;</span>
+		<span class="nt">&lt;div class="grid-box photo-box half-width"&gt;</span>
+			<span class="nt">&lt;img src="../images/content/pagebuilder/RDF_Web_JF5K_RunnersReceive_585.jpg" title="Learn what Jimmy Fund 5K &amp; Fun Run runners receive" alt="Jimmy Fund 5K &amp; Fun Run participants will help to raise money to cure cancer"&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;div class="grid-box text-box half-width"&gt;</span>
+			<span class="nt">&lt;h3 class="h3-jf"&gt;</span>SAMPLE HEADER<span class="nt">&lt;/h3&gt;</span>
+			<span class="nt">&lt;p&gt;</span>Sample text Sample text Sample text Sample text Sample text Sample<span class="nt">&lt;/p&gt;</span>
+			<span class="nt">&lt;ul&gt;</span>
+				<span class="nt">&lt;li&gt;</span>List item 1<span class="nt">&lt;/li&gt;</span>
+				<span class="nt">&lt;li&gt;</span>List item 2<span class="nt">&lt;/li&gt;</span>
+				<span class="nt">&lt;li&gt;</span>List item 3<span class="nt">&lt;/li&gt;</span>
+			<span class="nt">&lt;/ul&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;div class="clearfix"&gt;</span><span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+	</code></pre>
+		   </figure>
+		  
+		
+		<h6>CSS</h6>  
+		<figure class="highlight"><pre><code class="language-scss" data-lang="scss">/*-----GRIDS-----*/
+
+.grid-row {
+	display: table;
+    table-layout: fixed;
+    margin: 0 auto;
+    width: auto;
+	background-color: #f6f6f6;
+}
+
+.grid-row .text-box {
+	display: table-cell;
+	vertical-align: middle;
+	position: relative;
+	padding: 40px 40px 40px 40px;
+}
+
+.half-width{
+	width: 50%;
+	max-width:585px;
+    display: inline-block;
+    float: left;
+    vertical-align: top;
+    margin-bottom: 0px;
+}
+
+.grid-row .photo-box {
+	padding: 0px;
+	overflow:hidden;
+}
+
+
+@media only screen and (max-width: 1169px) {
+.grid-row {
+	margin-left: -20px;
+	margin-right: -20px;	
+}
+}
+
+@media only screen and (max-width: 1169px) and (min-width: 768px) {
+.grid-row {
+	display: block;
+    height: 460px;
+    overflow: hidden;
+}
+.photo-box img {
+	min-height: 460px;
+	max-width: 585px;
+	display: block;
+	/*adjust to center image content for tablet*/
+	margin-left:-50;
+	}		
+.grid-row .text-box {
+	/*padding: 40px 40px 40px 40px;*/
+}
+}
+
+@media only screen and (max-width: 767px) {
+.grid-row {
+	margin-left: -10px;
+	margin-right: -10px;
+}	
+.half-width{
+	width: 100%;
+}
+.grid-row .text-box {
+	padding: 40px 40px 20px;
+	border-bottom: 1px solid #939598;
+}
+.photo-box {
+	max-height: 450px;
+	overflow: hidden;
+	margin-left: 0;	
+}
+}
+}</code></pre>
+        </figure>
+		
+		  
+		  
+		<!------------------2 x 2 GRID------------------>		  
+		  
+		  
+        <h2 id="twobytwo">2 X 2 Grid</h2>
         <p>Lists with the <code>.bulleted-list</code> class are used for listing registration packet contents, etc. List items are part of the <code>.bulleted-item</code> class.</p>
        
 		  
@@ -160,11 +287,11 @@
 		  
 		  <div class="grid-row">
 		<div class="grid-box photo-box half-width">
-			<img src="../images/content/pagebuilder/RDF_Web_JF5K_RunnersReceive_585.jpg" title="Learn what Jimmy Fund 5K & Fun Run runners receive" alt="Jimmy Fund 5K & Fun Run participants will help to raise money to cure cancer">
+			<img src="../images/content/pagebuilder/RDF_Web_JF5K_RunnersReceive_585.jpg" title="Learn what Jimmy Fund 5K &amp; Fun Run runners receive" alt="Jimmy Fund 5K &amp; Fun Run participants will help to raise money to cure cancer">
 		</div>
 		<div class="grid-box text-box half-width">
 			<h3 class="h3-jf">SAMPLE HEADER</h3>
-			<p>Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text </p>
+			<p>Sample text Sample text Sample text Sample text Sample text Sample</p>
 			<ul>
 				<li>List item 1</li>
 				<li>List item 2</li>
@@ -175,7 +302,7 @@
 	</div>
 			
 		  
-        	<div class="grid-row">
+        	<div class="grid-row" style="margin-bottom:20px">
 				<div class="grid-box text-box half-width">
 					<h3 class="h3-jf">SAMPLE HEADER</h3>
 					<p>Sample text Sample text Sample text : <a href="http://www.jimmyfund.org/ways-to-give/giving/matching-gifts/" target="_blank">sample link</a>, <a href="http://www.jimmyfund.org/ways-to-give/giving/give-stock/" target="_blank">sample link</a>, and <a href="http://www.jimmyfund.org/ways-to-give/giving/daf-direct/" target="_blank">sample link</a>.</p>
@@ -187,132 +314,119 @@
 			</div>
 		  
 		  
-        <div class="bd-example"></div>
-		  
 		  
 		<h6>HTML</h6>
-        <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul class="bulleted-list"&gt;</span>
-		<span class="nt">&lt;li&gt;Volunteers must be 18 or older&lt;/li&gt;</span>
-		<span class="nt">&lt;li&gt;Volunteer registration is in the Champions Club at Fenway Park, on Ipswich Street&lt;/li&gt;</span>
-		<span class="nt">&lt;li&gt;Dress casually and wear comfortable shoes; you will be provided with a t-shirt or hat, depending on your role&lt;/li&gt;</span>
-		<span class="nt">&lt;li&gt;We encourage you to take public transportation as we are unable to provide volunteer parking; the closest MBTA stop is Kenmore&lt;/li&gt;</span>
-<span class="nt">&lt;/ul&gt;</span></code></pre>
-        </figure>
+        <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div class="grid-row"&gt;</span>
+		<span class="nt">&lt;div class="grid-box photo-box half-width"&gt;</span>
+			<span class="nt">&lt;img src="../images/content/pagebuilder/RDF_Web_JF5K_RunnersReceive_585.jpg" title="Learn what Jimmy Fund 5K &amp; Fun Run runners receive" alt="Jimmy Fund 5K &amp; Fun Run participants will help to raise money to cure cancer"&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;div class="grid-box text-box half-width"&gt;</span>
+			<span class="nt">&lt;h3 class="h3-jf"&gt;</span>SAMPLE HEADER<span class="nt">&lt;/h3&gt;</span>
+			<span class="nt">&lt;p&gt;</span>Sample text Sample text Sample text Sample text Sample text Sample<span class="nt">&lt;/p&gt;</span>
+			<span class="nt">&lt;ul&gt;</span>
+				<span class="nt">&lt;li&gt;</span>List item 1<span class="nt">&lt;/li&gt;</span>
+				<span class="nt">&lt;li&gt;</span>List item 2<span class="nt">&lt;/li&gt;</span>
+				<span class="nt">&lt;li&gt;</span>List item 3<span class="nt">&lt;/li&gt;</span>
+			<span class="nt">&lt;/ul&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;div class="clearfix"&gt;</span><span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+	
+	<span class="nt">&lt;div class="grid-row"&gt;</span>
+		<span class="nt">&lt;div class="grid-box text-box half-width"&gt;</span>
+			<span class="nt">&lt;h3 class="h3-jf"&gt;</span>SAMPLE HEADER<span class="nt">&lt;/h3&gt;</span>
+			<span class="nt">&lt;p&gt;</span>Sample text Sample text Sample text : <span class="nt">&lt;a href="http://www.jimmyfund.org/ways-to-give/giving/matching-gifts/" target="_blank"&gt;</span>sample link<span class="nt">&lt;/a&gt;</span>, <span class="nt">&lt;a href="http://www.jimmyfund.org/ways-to-give/giving/give-stock/" target="_blank"&gt;</span>sample link<span class="nt">&lt;/a&gt;</span>, and <span class="nt">&lt;a href="http://www.jimmyfund.org/ways-to-give/giving/daf-direct/" target="_blank"&gt;</span>sample link<span class="nt">&lt;/a&gt;</span>.<span class="nt">&lt;/p&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;div class="grid-box photo-box half-width"&gt;</span>
+			<span class="nt">&lt;img src="../images/content/pagebuilder/JFW_Web_TipsandTools_CollectGiftsImage_585.jpg" title="Learn what Jimmy Fund 5K &amp; Fun Run runners receive" alt="Jimmy Fund 5K &amp; Fun Run participants will help to raise money to cure cancer"&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;div class="clearfix"&gt;</span><span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;/div&gt;</span></code></pre>
+		   </figure>
 		  
 		
 		<h6>CSS</h6>  
-		<figure class="highlight"><pre><code class="language-scss" data-lang="scss">/*-----UL Bulleted-----*/
-		
-ul.bulleted-list {
-	margin-top: 0;
-	-webkit-padding-start: 20px;
+		<figure class="highlight"><pre><code class="language-scss" data-lang="scss">/*-----GRIDS-----*/
+
+.grid-row {
+	display: table;
+    table-layout: fixed;
+    margin: 0 auto;
+    width: auto;
+	background-color: #f6f6f6;
 }
 
-/*-----LI Bulleted-----*/
-
-li.bulleted-item {
-	font-size: 16px;
-	padding-bottom: 10px;
-	padding-left: 0;	
-}</code></pre>
-        </figure>
-		  
-		  
-		  
-		  
-		<!------------------NUMBERED LISTS------------------>		  
-		  
-        <h2 id="numbered">Numbered Lists</h2>
-        <p>Lists with the <code>.numbered-list</code> class are used for listing fundraising tips, etc.</p>
-        <div class="bd-example">
-          <ul class="numbered-list">
-				<li><span class="not-number">Log in to your Participant Center to customize your fundraising page and URL. Telling your story on your page helps increase gifts.</span></li>
-				<li><span class="not-number">Share your personal or team URL on social media to ask for support. Social media helps broaden your audience.</span></li>
-				<li><span class="not-number">Check out the Runner's Tools in your Participant Center for fundraising materials, important dates, Dana-Farber Cancer Institute facts, and other key resources.</span></li>
-				<li><span class="not-number">Create and view customizable reports showing who has supported your fundraising, how much they gave, and contact information for thank you notes.</span></li>
-		  </ul>
-        </div>
-		<h6>HTML</h6>
-        <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul class="numbered-list"&gt;</span>
-		<span class="nt">&lt;li&gt;&lt;span class="not-number"&gt;Volunteers must be 18 or older&lt;/span&gt;&lt;/li&gt;</span>
-		<span class="nt">&lt;li&gt;&lt;span class="not-number"&gt;Volunteer registration is in the Champions Club at Fenway Park, on Ipswich Street&lt;/span&gt;&lt;/li&gt;</span>
-		<span class="nt">&lt;li&gt;&lt;span class="not-number"&gt;Dress casually and wear comfortable shoes; you will be provided with a t-shirt or hat, depending on your role&lt;/span&gt;&lt;/li&gt;</span>
-		<span class="nt">&lt;li&gt;&lt;span class="not-number"&gt;We encourage you to take public transportation as we are unable to provide volunteer parking; the closest MBTA stop is Kenmore&lt;/span&gt;&lt;/li&gt;</span>
-<span class="nt">&lt;/ul&gt;</span></code></pre>
-        </figure>
-		  
-		
-		<h6>CSS</h6>  
-		<figure class="highlight"><pre><code class="language-scss" data-lang="scss">/*-----UL Numbered-----*/
-		
-ul.numbered-list {
-	counter-reset: li;
-	list-style-type: none;
-	font-size: 14px;
-	line-height: 24px;
-	padding-left: 0px;
+.grid-row .text-box {
+	display: table-cell;
+	vertical-align: middle;
+	position: relative;
+	padding: 40px 40px 40px 40px;
 }
 
-ul.numbered-list li:before {
-	content: counter(li);
-	counter-increment: li;
-	height: 35px;
-	line-height: 35px;
-	width: 35px;
-	border: 1px solid #000;
-	border-radius: 50%;
-	color: #000;
-	text-align: center;
-	position: absolute;
-	left: -15px;
-	top: 4px;
-	font-weight: bold;
+.half-width{
+	width: 50%;
+	max-width:585px;
+    display: inline-block;
+    float: left;
+    vertical-align: top;
+    margin-bottom: 0px;
 }
 
-ul.numbered-list li{
-	font-size: 18px;
-	padding: 5px 0px 5px 30px!important;
+.grid-row .photo-box {
+	padding: 0px;
+	overflow:hidden;
 }
 
-ul.numbered-list li .not-number{
-	font-size:16px;
+
+@media only screen and (max-width: 1169px) {
+.grid-row {
+	margin-left: -20px;
+	margin-right: -20px;	
+}
 }
 
 @media only screen and (max-width: 1169px) and (min-width: 768px) {
-ul.numbered-list {
-	line-height: 18px;
+.grid-row {
+	display: block;
+    height: 460px;
+    overflow: hidden;
 }
-ul.numbered-list li .not-number{
-		font-size:15px;
-	}
+.photo-box img {
+	min-height: 460px;
+	max-width: 585px;
+	display: block;
+	/*adjust to center image content for tablet*/
+	margin-left:-50;
+	}		
+.grid-row .text-box {
+	/*padding: 40px 40px 40px 40px;*/
+}
 }
 
-@media only screen and (max-width: 767px){
-ul.numbered-list {
-		counter-reset: li;
-		list-style-type: none;
-		font-size: 14px;
-		line-height: 18px;
-		padding-left: 10px;
-	}
-	
-ul.numbered-list li:before {
-		content: counter(li);
-		counter-increment: li;
-		height: 25px;
-		line-height: 25px;
-		width: 25px;
-		border: 1px solid #000;
-		border-radius: 50%;
-		color: #000;
-		text-align: center;
-		position: absolute;
-		left: -5px;
-		top: 4px;
-		font-weight: bold;
-	}
+@media only screen and (max-width: 767px) {
+.grid-row {
+	margin-left: -10px;
+	margin-right: -10px;
+}	
+.half-width{
+	width: 100%;
+}
+.grid-row .text-box {
+	padding: 40px 40px 20px;
+	border-bottom: 1px solid #939598;
+}
+.photo-box {
+	max-height: 450px;
+	overflow: hidden;
+	margin-left: 0;	
+}
+}
 }</code></pre>
         </figure>
+		  
+
+		  
+		  
 		  
 		  
 		 
