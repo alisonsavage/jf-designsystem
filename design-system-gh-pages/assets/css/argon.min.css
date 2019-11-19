@@ -306,25 +306,22 @@ template {
 }
 
 .grid-row .text-box {
-	padding: 125px 40px 40px 40px;
-}
-
-.text-box {
 	display: table-cell;
 	vertical-align: middle;
 	position: relative;
-	padding: 50px 40px 40px 40px;
+	padding: 40px 40px 40px 40px;
 }
 
 .half-width{
 	width: 50%;
+	max-width:585px;
     display: inline-block;
     float: left;
     vertical-align: top;
     margin-bottom: 0px;
 }
 
-.photo-box {
+.grid-row .photo-box {
 	padding: 0px;
 }
 
@@ -348,7 +345,7 @@ template {
 	display: block;
 	}		
 .grid-row .text-box {
-	padding: 75px 40px 40px 40px;
+	/*padding: 40px 40px 40px 40px;*/
 }
 }
 
