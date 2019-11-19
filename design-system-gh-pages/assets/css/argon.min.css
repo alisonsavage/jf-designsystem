@@ -302,7 +302,6 @@ template {
     table-layout: fixed;
     margin: 0 auto;
     width: auto;
-	background-color: #f6f6f6;
 }
 
 .grid-row .text-box {
@@ -310,6 +309,7 @@ template {
 	vertical-align: middle;
 	position: relative;
 	padding: 40px 40px 40px 40px;
+	background-color: #f6f6f6;
 }
 
 .half-width{
