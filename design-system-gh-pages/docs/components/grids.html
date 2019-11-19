@@ -157,11 +157,11 @@
 		  
 		  
 		  
-		  <div class="grid-row" style="margin-bottom:20px">
-		<div class="grid-box photo-box half-width">
+		  <div class="box-row" style="margin-bottom:20px">
+		<div class="block-img half-width">
 			<img src="../images/content/pagebuilder/RDF_Web_JF5K_RunnersReceive_585.jpg" title="Learn what Jimmy Fund 5K &amp; Fun Run runners receive" alt="Jimmy Fund 5K &amp; Fun Run participants will help to raise money to cure cancer">
 		</div>
-		<div class="grid-box text-box half-width">
+		<div class="block-text half-width">
 			<h3 class="h3-jf">SAMPLE HEADER</h3>
 			<p>Sample text Sample text Sample text Sample text Sample text Sample</p>
 			<ul>
@@ -176,11 +176,11 @@
 		  
 		  
 		<h6>HTML</h6>
-        <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div class="grid-row"&gt;</span>
-		<span class="nt">&lt;div class="grid-box photo-box half-width"&gt;</span>
+        <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div class="box-row"&gt;</span>
+		<span class="nt">&lt;div class="block-img half-width"&gt;</span>
 			<span class="nt">&lt;img src="../images/content/pagebuilder/RDF_Web_JF5K_RunnersReceive_585.jpg" title="Learn what Jimmy Fund 5K &amp; Fun Run runners receive" alt="Jimmy Fund 5K &amp; Fun Run participants will help to raise money to cure cancer"&gt;</span>
 		<span class="nt">&lt;/div&gt;</span>
-		<span class="nt">&lt;div class="grid-box text-box half-width"&gt;</span>
+		<span class="nt">&lt;div class="block-text half-width"&gt;</span>
 			<span class="nt">&lt;h3 class="h3-jf"&gt;</span>SAMPLE HEADER<span class="nt">&lt;/h3&gt;</span>
 			<span class="nt">&lt;p&gt;</span>Sample text Sample text Sample text Sample text Sample text Sample<span class="nt">&lt;/p&gt;</span>
 			<span class="nt">&lt;ul&gt;</span>
@@ -198,7 +198,7 @@
 		<h6>CSS</h6>  
 		<figure class="highlight"><pre><code class="language-scss" data-lang="scss">/*-----GRIDS-----*/
 
-.grid-row {
+.box-row {
 	display: table;
     table-layout: fixed;
     margin: 0 auto;
@@ -206,7 +206,7 @@
 	background-color: #f6f6f6;
 }
 
-.grid-row .text-box {
+.box-row .block-text {
 	display: table-cell;
 	vertical-align: middle;
 	position: relative;
@@ -222,50 +222,50 @@
     margin-bottom: 0px;
 }
 
-.grid-row .photo-box {
+.box-row .block-img {
 	padding: 0px;
 	overflow:hidden;
 }
 
 
 @media only screen and (max-width: 1169px) {
-.grid-row {
+.box-row {
 	margin-left: -20px;
 	margin-right: -20px;	
 }
 }
 
 @media only screen and (max-width: 1169px) and (min-width: 768px) {
-.grid-row {
+.box-row {
 	display: block;
     height: 460px;
     overflow: hidden;
 }
-.photo-box img {
+.block-img img {
 	min-height: 460px;
 	max-width: 585px;
 	display: block;
 	/*adjust to center image content for tablet*/
 	margin-left:-50;
 	}		
-.grid-row .text-box {
+.box-row .block-text {
 	/*padding: 40px 40px 40px 40px;*/
 }
 }
 
 @media only screen and (max-width: 767px) {
-.grid-row {
+.box-row {
 	margin-left: -10px;
 	margin-right: -10px;
 }	
 .half-width{
 	width: 100%;
 }
-.grid-row .text-box {
+.box-row .block-text {
 	padding: 40px 40px 20px;
 	border-bottom: 1px solid #939598;
 }
-.photo-box {
+.block-img {
 	max-height: 450px;
 	overflow: hidden;
 	margin-left: 0;	
@@ -285,11 +285,11 @@
 		  
 		  
 		  
-		  <div class="grid-row">
-		<div class="grid-box photo-box half-width">
+		  <div class="box-row">
+		<div class="block-img half-width">
 			<img src="../images/content/pagebuilder/RDF_Web_JF5K_RunnersReceive_585.jpg" title="Learn what Jimmy Fund 5K &amp; Fun Run runners receive" alt="Jimmy Fund 5K &amp; Fun Run participants will help to raise money to cure cancer">
 		</div>
-		<div class="grid-box text-box half-width">
+		<div class="block-text half-width">
 			<h3 class="h3-jf">SAMPLE HEADER</h3>
 			<p>Sample text Sample text Sample text Sample text Sample text Sample</p>
 			<ul>
@@ -302,12 +302,12 @@
 	</div>
 			
 		  
-        	<div class="grid-row" style="margin-bottom:20px">
-				<div class="grid-box text-box half-width">
+        	<div class="box-row" style="margin-bottom:20px">
+				<div class="block-text half-width">
 					<h3 class="h3-jf">SAMPLE HEADER</h3>
 					<p>Sample text Sample text Sample text : <a href="http://www.jimmyfund.org/ways-to-give/giving/matching-gifts/" target="_blank">sample link</a>, <a href="http://www.jimmyfund.org/ways-to-give/giving/give-stock/" target="_blank">sample link</a>, and <a href="http://www.jimmyfund.org/ways-to-give/giving/daf-direct/" target="_blank">sample link</a>.</p>
 				</div>
-				<div class="grid-box photo-box half-width">
+				<div class="block-img half-width">
 					<img title="Collect gifts and contributions for the Boston Marathon Jimmy Fund Walk" alt="Help the Jimmy Fund Walk in the fight against cancer by collecting gifts and contributions" src="../images/content/pagebuilder/JFW_Web_TipsandTools_CollectGiftsImage_585.jpg" />
 				</div>
 				<div class="clearfix"></div>
@@ -316,11 +316,11 @@
 		  
 		  
 		<h6>HTML</h6>
-        <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div class="grid-row"&gt;</span>
-		<span class="nt">&lt;div class="grid-box photo-box half-width"&gt;</span>
+        <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div class="box-row"&gt;</span>
+		<span class="nt">&lt;div class="block-img half-width"&gt;</span>
 			<span class="nt">&lt;img src="../images/content/pagebuilder/RDF_Web_JF5K_RunnersReceive_585.jpg" title="Learn what Jimmy Fund 5K &amp; Fun Run runners receive" alt="Jimmy Fund 5K &amp; Fun Run participants will help to raise money to cure cancer"&gt;</span>
 		<span class="nt">&lt;/div&gt;</span>
-		<span class="nt">&lt;div class="grid-box text-box half-width"&gt;</span>
+		<span class="nt">&lt;div class="block-text half-width"&gt;</span>
 			<span class="nt">&lt;h3 class="h3-jf"&gt;</span>SAMPLE HEADER<span class="nt">&lt;/h3&gt;</span>
 			<span class="nt">&lt;p&gt;</span>Sample text Sample text Sample text Sample text Sample text Sample<span class="nt">&lt;/p&gt;</span>
 			<span class="nt">&lt;ul&gt;</span>
@@ -332,12 +332,12 @@
 		<span class="nt">&lt;div class="clearfix"&gt;</span><span class="nt">&lt;/div&gt;</span>
 	<span class="nt">&lt;/div&gt;</span>
 	
-	<span class="nt">&lt;div class="grid-row"&gt;</span>
-		<span class="nt">&lt;div class="grid-box text-box half-width"&gt;</span>
+	<span class="nt">&lt;div class="box-row"&gt;</span>
+		<span class="nt">&lt;div class="block-text half-width"&gt;</span>
 			<span class="nt">&lt;h3 class="h3-jf"&gt;</span>SAMPLE HEADER<span class="nt">&lt;/h3&gt;</span>
 			<span class="nt">&lt;p&gt;</span>Sample text Sample text Sample text : <span class="nt">&lt;a href="http://www.jimmyfund.org/ways-to-give/giving/matching-gifts/" target="_blank"&gt;</span>sample link<span class="nt">&lt;/a&gt;</span>, <span class="nt">&lt;a href="http://www.jimmyfund.org/ways-to-give/giving/give-stock/" target="_blank"&gt;</span>sample link<span class="nt">&lt;/a&gt;</span>, and <span class="nt">&lt;a href="http://www.jimmyfund.org/ways-to-give/giving/daf-direct/" target="_blank"&gt;</span>sample link<span class="nt">&lt;/a&gt;</span>.<span class="nt">&lt;/p&gt;</span>
 		<span class="nt">&lt;/div&gt;</span>
-		<span class="nt">&lt;div class="grid-box photo-box half-width"&gt;</span>
+		<span class="nt">&lt;div class="block-img half-width"&gt;</span>
 			<span class="nt">&lt;img src="../images/content/pagebuilder/JFW_Web_TipsandTools_CollectGiftsImage_585.jpg" title="Learn what Jimmy Fund 5K &amp; Fun Run runners receive" alt="Jimmy Fund 5K &amp; Fun Run participants will help to raise money to cure cancer"&gt;</span>
 		<span class="nt">&lt;/div&gt;</span>
 		<span class="nt">&lt;div class="clearfix"&gt;</span><span class="nt">&lt;/div&gt;</span>
@@ -348,7 +348,7 @@
 		<h6>CSS</h6>  
 		<figure class="highlight"><pre><code class="language-scss" data-lang="scss">/*-----GRIDS-----*/
 
-.grid-row {
+.box-row {
 	display: table;
     table-layout: fixed;
     margin: 0 auto;
@@ -356,7 +356,7 @@
 	background-color: #f6f6f6;
 }
 
-.grid-row .text-box {
+.box-row .block-text {
 	display: table-cell;
 	vertical-align: middle;
 	position: relative;
@@ -372,50 +372,50 @@
     margin-bottom: 0px;
 }
 
-.grid-row .photo-box {
+.box-row .block-img {
 	padding: 0px;
 	overflow:hidden;
 }
 
 
 @media only screen and (max-width: 1169px) {
-.grid-row {
+.box-row {
 	margin-left: -20px;
 	margin-right: -20px;	
 }
 }
 
 @media only screen and (max-width: 1169px) and (min-width: 768px) {
-.grid-row {
+.box-row {
 	display: block;
     height: 460px;
     overflow: hidden;
 }
-.photo-box img {
+.block-img img {
 	min-height: 460px;
 	max-width: 585px;
 	display: block;
 	/*adjust to center image content for tablet*/
 	margin-left:-50;
 	}		
-.grid-row .text-box {
+.box-row .block-text {
 	/*padding: 40px 40px 40px 40px;*/
 }
 }
 
 @media only screen and (max-width: 767px) {
-.grid-row {
+.box-row {
 	margin-left: -10px;
 	margin-right: -10px;
 }	
 .half-width{
 	width: 100%;
 }
-.grid-row .text-box {
+.box-row .block-text {
 	padding: 40px 40px 20px;
 	border-bottom: 1px solid #939598;
 }
-.photo-box {
+.block-img {
 	max-height: 450px;
 	overflow: hidden;
 	margin-left: 0;	
