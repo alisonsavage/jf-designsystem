@@ -323,6 +323,7 @@ template {
 
 .grid-row .photo-box {
 	padding: 0px;
+	overflow:hidden;
 }
 
 
@@ -353,6 +354,10 @@ template {
 .grid-row {
 	margin-left: -10px;
 	margin-right: -10px;	
+}	
+.grid-row img {
+	width: 100%;
+	margin-left: 0;	
 }
 .half-width{
 	width: 100%;
@@ -360,12 +365,11 @@ template {
 .grid-row .text-box {
 	padding: 40px 40px 20px;
 }
-.grid-row .photo-box {
-	width: 100%;
-		margin-left: 0;
+.photo-box {
+	max-height: 450px;
+	overflow: hidden;
 }
 }
-
 
 
 
