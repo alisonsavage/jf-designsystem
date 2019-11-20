@@ -317,6 +317,11 @@ button.accordion {
 button.accordion.active, button.accordion:hover {
     color: #58595b;
 }
+i.fa.fa-angle-down {
+    float: right;
+    font-size: 22px;
+    margin-top: 6px;
+}
 
 div.acc_content {
 	color: #77787b;
@@ -349,6 +354,9 @@ div.acc_content p.faq-a {
 }
 p.faq-a, ul.faq-a {
     display: none;
+}
+p.faq-a.open, ul.faq-a.open {
+    display: block;
 }
 p:last-child {
     margin-bottom: 0px;

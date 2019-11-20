@@ -153,7 +153,8 @@
 		  
         <h2 id="bulleted">Accordions</h2>
         <p>Lists with the <code>.bulleted-list</code> class are used for listing registration packet contents, etc. List items are part of the <code>.bulleted-item</code> class.</p>
-        <div class="bd-example">
+		  
+		  
         <button class="accordion">participation<i class="fa fa-angle-down"></i></button>
 <div class="acc_content">
     <div class="question">
@@ -176,11 +177,6 @@
         <p class="faq-q">Can people outside of my workplace or school join my team?</p>
         <p class="faq-a">Yes, anyone can join your team by giving money to your team&#8217;s fundraising page.</p>
     </div>
-    <!--<div class="question">
-        <p class="faq-q">Can my workplace or school have multiple Rally Teams?</p>
-        <p class="faq-a">Yes, your organization can house as many Rally teams as it wants. However, if you would like each team's fundraising to count toward the larger organization's fundraising total, you must participate as one team. You may merge teams until April 23, 2019 by emailing your request to <a href="mailto:RallyAgainstCancer@dfci.harvard.edu" target="_blank">RallyAgainstCancer@dfci.harvard.edu</a>.</p>
-    </div>-->
-</div>
         </div>
 		  
 		  
@@ -216,6 +212,34 @@ li.bulleted-item {
       </main>
     </div>
   </div>
+	
+	
+<!--ACCORDION SCRIPT-->
+	<script>
+Y.use("jquery-ui", function(Y) {
+    jQuery(function() {
+        jQuery('.faq-q').click(function() {
+            jQuery(this).siblings('.faq-a').toggleClass('open');
+        });
+    });
+});
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        var acc_content = this.nextElementSibling;
+        if (acc_content.style.display === "block") {
+            acc_content.style.display = "none";
+        } else {
+            acc_content.style.display = "block";
+        }
+    }
+}
+</script>
+	
 	
   <!-- Core -->
 	
