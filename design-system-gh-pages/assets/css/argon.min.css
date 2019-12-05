@@ -295,7 +295,7 @@ template {
 	display: none!important
 }
 
-/*-----ACCORDIONS-----*/
+/*-----ACCORDIONS-----
 
 button.accordion {
 	background-color: #eee;
@@ -364,7 +364,7 @@ p:last-child {
 p:first-child {
     margin-top: 0px;
 }
-
+*/
 
 
 /*-----GRIDS-----*/
