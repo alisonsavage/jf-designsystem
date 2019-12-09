@@ -1,3 +1,5 @@
+[[S51:reus_dm_global_stylesheet]]
+
 <!DOCTYPE html>
 <html>
 
@@ -217,7 +219,13 @@
 		  
 		  
 		<h6>HTML</h6>
-        <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul class="bulleted-list"&gt;</span>
+        <figure class="highlight"><script type="text/plain" class="language-markup">
+<p>Example</p>
+</script>
+        </figure>
+		  
+		  
+		   <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul class="bulleted-list"&gt;</span>
 		<span class="nt">&lt;li&gt;List item 1&lt;/li&gt;</span>
 		<span class="nt">&lt;li&gt;List item 2&lt;/li&gt;</span>
 		<span class="nt">&lt;li&gt;List item 3&lt;/li&gt;</span>
@@ -226,7 +234,7 @@
         </figure>
 		  
 		
-		<h6>CSS</h6>  
+		<!--<h6>CSS</h6>  
 		<figure class="highlight"><pre><code class="language-scss" data-lang="scss">/*-----ACCORDIONS-----*/
 
 button.accordion {
@@ -296,39 +304,39 @@ p:last-child {
 p:first-child {
     margin-top: 0px;
 }</code></pre>
-        </figure>
+        </figure>-->
 		  
 		  
 		  
-		  <h6>JAVASCRIPT</h6>
+		  <!--<h6>JAVASCRIPT</h6>
         <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">
-	<script>
+<script>
 
-		Y.use("jquery-ui", function(Y) {
-			jQuery(function() {
-				jQuery('.faq-q').click(function() {
-					jQuery(this).siblings('.faq-a').toggleClass('open');
-				});
-			});
-		});
+Y.use("jquery-ui", function(Y) {
+    jQuery(function() {
+        jQuery('.faq-q').click(function() {
+            jQuery(this).siblings('.faq-a').toggleClass('open');
+        });
+    });
+});
 
-		var acc = document.getElementsByClassName("accordion");
-		var i;
+var acc = document.getElementsByClassName("accordion");
+var i;
 
-		for (i = 0; i < acc.length; i++) {
-			acc[i].onclick = function(){
-				this.classList.toggle("active");
-				var acc_content = this.nextElementSibling;
-				if (acc_content.style.display === "block") {
-					acc_content.style.display = "none";
-				} else {
-					acc_content.style.display = "block";
-				}
-			}
-		}
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        var acc_content = this.nextElementSibling;
+        if (acc_content.style.display === "block") {
+            acc_content.style.display = "none";
+        } else {
+            acc_content.style.display = "block";
+        }
+    }
+}
 
-	</script></code></pre>
-        </figure>
+</script></code></pre>
+        </figure>-->
 		  
 
 		 
@@ -338,30 +346,30 @@ p:first-child {
 	
 	
 <!--ACCORDION SCRIPT-->
-	<script>
-		Y.use("jquery-ui", function(Y) {
-			jQuery(function() {
-				jQuery('.faq-q').click(function() {
-					jQuery(this).siblings('.faq-a').toggleClass('open');
-				});
-			});
-		});
+<script>
+Y.use("jquery-ui", function(Y) {
+    jQuery(function() {
+        jQuery('.faq-q').click(function() {
+            jQuery(this).siblings('.faq-a').toggleClass('open');
+        });
+    });
+});
 
-		var acc = document.getElementsByClassName("accordion");
-		var i;
+var acc = document.getElementsByClassName("accordion");
+var i;
 
-		for (i = 0; i < acc.length; i++) {
-			acc[i].onclick = function(){
-				this.classList.toggle("active");
-				var acc_content = this.nextElementSibling;
-				if (acc_content.style.display === "block") {
-					acc_content.style.display = "none";
-				} else {
-					acc_content.style.display = "block";
-				}
-			}
-		}
-	</script>
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        var acc_content = this.nextElementSibling;
+        if (acc_content.style.display === "block") {
+            acc_content.style.display = "none";
+        } else {
+            acc_content.style.display = "block";
+        }
+    }
+}
+</script>
 	
 	
   <!-- Core -->
@@ -486,6 +494,7 @@ Y.use('jquery-noconflict', function() {
   <script src="https://alisonsavage.github.io/jf-designsystem/design-system-gh-pages/assets/js/vendor/clipboard.min.js"></script>
   <script src="https://alisonsavage.github.io/jf-designsystem/design-system-gh-pages/assets/js/vendor/holder.min.js"></script>
   <script src="https://alisonsavage.github.io/jf-designsystem/design-system-gh-pages/assets/js/vendor/prism.min.js"></script>
+  <script src="https://alisonsavage.github.io/jf-designsystem/design-system-gh-pages/assets/js/vendor/prism-unescaped-markup.js"></script>	
   <script src="https://alisonsavage.github.io/jf-designsystem/design-system-gh-pages/assets/js/docs.min.js"></script>
   <!-- Argon JS -->
   <script src="https://alisonsavage.github.io/jf-designsystem/design-system-gh-pages/assets/js/argon.min.js"></script>
