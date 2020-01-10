@@ -4236,6 +4236,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
 		width: 100%
 	}
 }
+/*Argon Accordions*/
 .accordion > .card {
 	overflow: hidden
 }
