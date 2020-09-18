@@ -1102,7 +1102,7 @@ pre>code.highlight {
   padding-bottom: 1rem
 }
 
-#ct-docs-nav.ct-links {
+#ct-docs-nav.collapse.ct-links {
   margin-right: -15px;
   margin-left: -15px;
   /*padding-top: 2rem;*/
