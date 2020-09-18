@@ -1102,13 +1102,6 @@ pre>code.highlight {
   padding-bottom: 1rem
 }
 
-#ct-docs-nav.collapse.ct-links {
-  margin-right: -15px;
-  margin-left: -15px;
-  /*padding-top: 2rem;*/
-  padding-bottom: 1rem
-}
-
 @media (min-width:768px) {
   @supports ((position:-webkit-sticky) or (position:sticky)) {
     .ct-links {
